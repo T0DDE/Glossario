@@ -1,3 +1,4 @@
+CNEC = Critical Network Element with Contingency
 FB = Flow Based
 NTC = Net Transfer Capacity
 PTDF = Power Transfer Distribution Factor
