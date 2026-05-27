@@ -1,41 +1,53 @@
 """
-Glossario Acronimi - v4
-- Fuzzy finder in tempo reale
-- Push unico al ritorno al menu
-- Descrizione lunga per ogni acronimo
-- Retrocompatibilità col vecchio formato
-- glossario.txt sempre nella cartella dello script
+Glossario Acronimi - v5
+- Fuzzy finder realtime
+- Descrizioni multilinea
+- Salvataggio in Markdown
+- Indice cliccabile automatico
+- Push Git automatico
+- File leggibile anche senza il programma
 
-Formato file:
-ACRONIMO|significato|descrizione
+Formato Markdown:
 
-Compatibile anche con:
-ACRONIMO = significato
+# Glossario Acronimi
+
+## Indice
+- [API](#api)
+
+---
+
+## API
+**Significato:** Application Programming Interface
+
+Descrizione multilinea...
+
+---
 """
 
 import msvcrt
 import os
+import re
 import sys
 import subprocess
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-GLOSSARIO_FILE = SCRIPT_DIR / "glossario.txt"
+GLOSSARIO_FILE = SCRIPT_DIR / "glossario.md"
+
 MAX_RESULTS = 8
 
-# Abilita ANSI su Windows
 os.system('')
 
 
 # ── Git ────────────────────────────────────────────────────────────────────────
 
 def git_commit_push(modifiche: list):
-    """Commit + push con messaggio adattato."""
 
     if not modifiche:
         return
 
     if len(modifiche) == 1:
+
         tipo, acronimo, dettaglio = modifiche[0]
 
         if tipo == 'aggiunta':
@@ -48,6 +60,7 @@ def git_commit_push(modifiche: list):
             msg = f"Eliminazione acronimo '{acronimo}'"
 
     else:
+
         n_a = sum(1 for t, _, _ in modifiche if t == 'aggiunta')
         n_m = sum(1 for t, _, _ in modifiche if t == 'modifica')
         n_e = sum(1 for t, _, _ in modifiche if t == 'eliminazione')
@@ -66,6 +79,7 @@ def git_commit_push(modifiche: list):
         msg = "Glossario: " + ", ".join(parti)
 
     try:
+
         subprocess.run(
             ["git", "add", str(GLOSSARIO_FILE)],
             cwd=SCRIPT_DIR,
@@ -90,67 +104,96 @@ def git_commit_push(modifiche: list):
         print(f"\n  ↑ Push completato: {msg}")
 
     except subprocess.CalledProcessError as e:
+
         print(f"\n  ⚠ Errore git: {e}")
 
 
-# ── I/O glossario ──────────────────────────────────────────────────────────────
+# ── Markdown helpers ───────────────────────────────────────────────────────────
+
+def make_anchor(text: str) -> str:
+    """
+    Genera anchor GitHub-style.
+    """
+
+    text = text.lower().strip()
+
+    text = re.sub(r"[^\w\s-]", "", text)
+
+    text = text.replace(" ", "-")
+
+    return text
+
+
+# ── I/O ────────────────────────────────────────────────────────────────────────
 
 def carica_glossario():
-    """
-    Formato nuovo:
-    ACRONIMO|significato|descrizione
-
-    Formato vecchio:
-    ACRONIMO = significato
-    """
 
     glossario = {}
 
-    try:
-        with open(GLOSSARIO_FILE, "r", encoding="utf-8") as f:
+    if not GLOSSARIO_FILE.exists():
+        return glossario
 
-            for riga in f:
-                riga = riga.rstrip("\n")
+    with open(GLOSSARIO_FILE, "r", encoding="utf-8") as f:
 
-                if not riga.strip():
-                    continue
+        lines = f.readlines()
 
-                # ── Nuovo formato ────────────────────────────────────────
-                if "|" in riga:
+    current = None
+    descrizione = []
 
-                    parti = riga.split("|", 2)
+    for line in lines:
 
-                    acronimo = parti[0].strip().upper()
+        line = line.rstrip("\n")
 
-                    significato = (
-                        parti[1].strip()
-                        if len(parti) > 1
-                        else ""
-                    )
+        # ── Nuovo acronimo ──────────────────────────────────────────────
+        if line.startswith("## "):
 
-                    descrizione = (
-                        parti[2].replace("\\n", "\n").strip()
-                        if len(parti) > 2
-                        else ""
-                    )
+            titolo = line[3:].strip()
 
-                    glossario[acronimo] = {
-                        "significato": significato,
-                        "descrizione": descrizione
-                    }
+            # ignora indice
+            if titolo.lower() == "indice":
+                current = None
+                continue
 
-                # ── Vecchio formato ──────────────────────────────────────
-                elif " = " in riga:
+            # salva precedente
+            if current:
+                glossario[current]["descrizione"] = (
+                    "\n".join(descrizione).strip()
+                )
 
-                    acronimo, significato = riga.split(" = ", 1)
+            current = titolo
 
-                    glossario[acronimo.strip().upper()] = {
-                        "significato": significato.strip(),
-                        "descrizione": ""
-                    }
+            glossario[current] = {
+                "significato": "",
+                "descrizione": ""
+            }
 
-    except FileNotFoundError:
-        pass
+            descrizione = []
+
+        # ── Significato ─────────────────────────────────────────────────
+        elif line.startswith("**Significato:**") and current:
+
+            significato = (
+                line.replace("**Significato:**", "")
+                .strip()
+            )
+
+            glossario[current]["significato"] = significato
+
+        # ── Descrizione ────────────────────────────────────────────────
+        elif current:
+
+            # ignora separatori
+            if line.strip() == "---":
+                continue
+
+            descrizione.append(line)
+
+    # salva ultimo blocco
+    if current:
+
+        glossario[current]["descrizione"] = (
+            "\n".join(descrizione).strip()
+        )
 
     return glossario
 
@@ -159,21 +202,38 @@ def salva_glossario(glossario):
 
     with open(GLOSSARIO_FILE, "w", encoding="utf-8") as f:
 
+        # ── Titolo ────────────────────────────────────────────────────
+        f.write("# Glossario Acronimi\n\n")
+
+        # ── Indice ────────────────────────────────────────────────────
+        f.write("## Indice\n\n")
+
+        for acronimo in sorted(glossario):
+
+            anchor = make_anchor(acronimo)
+
+            f.write(f"- [{acronimo}](#{anchor})\n")
+
+        f.write("\n---\n")
+
+        # ── Voci ──────────────────────────────────────────────────────
         for acronimo in sorted(glossario):
 
             dato = glossario[acronimo]
 
-            significato = dato.get("significato", "").strip()
+            significato = dato["significato"].strip()
+            descrizione = dato["descrizione"].strip()
 
-            descrizione = (
-                dato.get("descrizione", "")
-                .replace("\n", "\\n")
-                .strip()
-            )
+            f.write(f"\n## {acronimo}\n")
 
             f.write(
-                f"{acronimo}|{significato}|{descrizione}\n"
+                f"**Significato:** {significato}\n\n"
             )
+
+            if descrizione:
+                f.write(descrizione + "\n\n")
+
+            f.write("---\n")
 
 
 # ── Finder rendering ───────────────────────────────────────────────────────────
@@ -189,7 +249,7 @@ def build_lines(query: str, glossario: dict) -> list[str]:
 
     lines = [
         f"  Cerca: {query}\u258c",
-        f"  {'─' * 55}",
+        f"  {'─' * 60}",
     ]
 
     if matches:
@@ -205,6 +265,7 @@ def build_lines(query: str, glossario: dict) -> list[str]:
             )
 
         if len(matches) > MAX_RESULTS:
+
             lines.append(
                 f"  ... e altri {len(matches) - MAX_RESULTS}"
             )
@@ -216,13 +277,14 @@ def build_lines(query: str, glossario: dict) -> list[str]:
         )
 
     else:
+
         lines.append("  (digita per cercare)")
 
     while len(lines) < MAX_RESULTS + 2:
         lines.append("")
 
     lines += [
-        f"  {'─' * 55}",
+        f"  {'─' * 60}",
         "  [Invio] conferma   [Esc] torna al menu",
     ]
 
@@ -250,37 +312,39 @@ def read_key():
     ch = msvcrt.getwch()
 
     if ch in ('\x00', '\xe0'):
+
         msvcrt.getwch()
+
         return None
 
     return ch
 
 
-# ── Util ───────────────────────────────────────────────────────────────────────
+# ── Utility ────────────────────────────────────────────────────────────────────
 
 def stampa_descrizione(descrizione: str):
 
     if not descrizione.strip():
+
         print("  (nessuna descrizione)")
+
         return
 
     print("  Descrizione:")
-    print("  ─────────────────────────────────────────")
+    print("  ─────────────────────────────────────────────")
 
     for riga in descrizione.splitlines():
+
         print(f"  {riga}")
 
-    print("  ─────────────────────────────────────────")
+    print("  ─────────────────────────────────────────────")
 
 
 def input_multiline(prompt=""):
-    """
-    Input multilinea.
-    Fine input = riga vuota.
-    """
 
     print(prompt)
-    print("  (Invio su riga vuota per terminare)\n")
+
+    print("  (riga vuota per terminare)\n")
 
     righe = []
 
@@ -315,14 +379,14 @@ def fuzzy_finder(glossario: dict, modifiche: list):
         if ch is None:
             continue
 
-        # ── ESC ──────────────────────────────────────────────────────────
+        # ── ESC ────────────────────────────────────────────────────────
         if ch == '\x1b':
 
             clear_block(n)
 
             return modifiche
 
-        # ── INVIO ────────────────────────────────────────────────────────
+        # ── INVIO ──────────────────────────────────────────────────────
         elif ch == '\r':
 
             acronimo = query.strip().upper()
@@ -332,13 +396,16 @@ def fuzzy_finder(glossario: dict, modifiche: list):
 
             clear_block(n)
 
-            # ── Esistente ───────────────────────────────────────────────
+            # ── Esistente ─────────────────────────────────────────────
             if acronimo in glossario:
 
                 dato = glossario[acronimo]
 
-                print(f"\n  ✔ '{acronimo}'")
-                print(f"  Significato: {dato['significato']}\n")
+                print(f"\n  ✔ {acronimo}")
+
+                print(
+                    f"  Significato: {dato['significato']}\n"
+                )
 
                 stampa_descrizione(
                     dato["descrizione"]
@@ -351,7 +418,7 @@ def fuzzy_finder(glossario: dict, modifiche: list):
 
                 scelta = input("\n  > ").strip().upper()
 
-                # ── Modifica significato ───────────────────────────────
+                # ── Modifica significato ────────────────────────────
                 if scelta == 'M':
 
                     nuovo = input(
@@ -360,8 +427,6 @@ def fuzzy_finder(glossario: dict, modifiche: list):
 
                     if nuovo:
 
-                        vecchio = dato["significato"]
-
                         glossario[acronimo]["significato"] = nuovo
 
                         salva_glossario(glossario)
@@ -369,17 +434,12 @@ def fuzzy_finder(glossario: dict, modifiche: list):
                         modifiche.append((
                             'modifica',
                             acronimo,
-                            f"significato aggiornato"
+                            'significato aggiornato'
                         ))
 
-                        print(f"\n  ✔ Significato aggiornato.")
-                        print(f"  Vecchio: {vecchio}")
-                        print(f"  Nuovo:   {nuovo}")
+                        print("\n  ✔ Significato aggiornato.")
 
-                    else:
-                        print("\n  ⚠ Campo vuoto.")
-
-                # ── Modifica descrizione ───────────────────────────────
+                # ── Modifica descrizione ────────────────────────────
                 elif scelta == 'D':
 
                     print("\n  Descrizione attuale:\n")
@@ -406,7 +466,7 @@ def fuzzy_finder(glossario: dict, modifiche: list):
 
                     print("\n  ✔ Descrizione aggiornata.")
 
-                # ── Elimina ────────────────────────────────────────────
+                # ── Elimina ─────────────────────────────────────────
                 elif scelta == 'E':
 
                     conf = input(
@@ -427,13 +487,12 @@ def fuzzy_finder(glossario: dict, modifiche: list):
 
                         print(f"\n  ✔ '{acronimo}' eliminato.")
 
-                    else:
-                        print("\n  ↩ Annullato.")
-
-            # ── Nuovo acronimo ──────────────────────────────────────────
+            # ── Nuovo acronimo ───────────────────────────────────────
             else:
 
-                print(f"\n  '{acronimo}' non è nel glossario.\n")
+                print(
+                    f"\n  '{acronimo}' non è nel glossario.\n"
+                )
 
                 significato = input(
                     f"  Significato di '{acronimo}': "
@@ -442,7 +501,7 @@ def fuzzy_finder(glossario: dict, modifiche: list):
                 if significato:
 
                     descrizione = input_multiline(
-                        "\n  Descrizione dettagliata (opzionale):"
+                        "\n  Descrizione dettagliata:"
                     )
 
                     glossario[acronimo] = {
@@ -460,11 +519,8 @@ def fuzzy_finder(glossario: dict, modifiche: list):
 
                     print(f"\n  ✔ '{acronimo}' salvato.")
 
-                else:
-                    print("\n  ⚠ Campo vuoto.")
-
             input(
-                "\n  Premi Invio per una nuova ricerca..."
+                "\n  Premi Invio per continuare..."
             )
 
             query = ""
@@ -475,7 +531,7 @@ def fuzzy_finder(glossario: dict, modifiche: list):
                 build_lines(query, glossario)
             )
 
-        # ── Backspace ───────────────────────────────────────────────────
+        # ── Backspace ─────────────────────────────────────────────────
         elif ch == '\x08':
 
             if query:
@@ -488,7 +544,7 @@ def fuzzy_finder(glossario: dict, modifiche: list):
                     build_lines(query, glossario)
                 )
 
-        # ── Carattere normale ───────────────────────────────────────────
+        # ── Carattere normale ─────────────────────────────────────────
         elif ch.isprintable():
 
             query += ch
@@ -518,7 +574,9 @@ def mostra_tutti(glossario):
 
         significato = glossario[acronimo]["significato"]
 
-        print(f"  {acronimo:<12} {significato}")
+        print(
+            f"  {acronimo:<12} {significato}"
+        )
 
     print(f"  {'─' * 60}")
     print(f"  {len(glossario)} acronimo/i.\n")
@@ -557,6 +615,7 @@ def main():
             )
 
             if modifiche:
+
                 git_commit_push(modifiche)
 
         elif scelta == '2':
