@@ -1,1 +1,2 @@
+FB = Flow Based
 NTC = Net Transfer Capacity
