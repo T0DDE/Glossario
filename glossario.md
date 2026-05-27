@@ -12,8 +12,12 @@
 - [DACC](#dacc)
 - [DQC](#dqc)
 - [FB](#fb)
+- [FCA](#fca)
 - [FRM](#frm)
+- [GLSK](#glsk)
+- [GSK](#gsk)
 - [IBWT](#ibwt)
+- [IGM](#igm)
 - [IVA](#iva)
 - [LTA](#lta)
 - [NPF](#npf)
@@ -56,7 +60,9 @@ Sono definite nell'articolo 2 del regolamento CACM come quelle "aree geografiche
 ---
 
 ## CNEC
-**Significato:** Critical Network Element with Contingency
+**Significato:** Critical Network Elements and Contingenties
+
+Lista di elementi "critici" della rete (e contingenze N-1). Elementi rilevanti della rete per scambi cross-zonali.
 
 ---
 
@@ -82,13 +88,37 @@ Il processo di calcolo della capacità che si avvia nel D-2 e determina l'NTC pe
 
 ---
 
+## FCA
+**Significato:** Forward Capacity Allocation
+
+---
+
 ## FRM
 **Significato:** Flow Reliability Margin
 
 ---
 
+## GLSK
+**Significato:** Generation and Load Shift Keys
+
+"Traduce" i cambiamenti in Net Position (NP) in cambiamenti nella generazione/consumo nodali.
+
+---
+
+## GSK
+**Significato:** Generation Shift Key
+
+---
+
 ## IBWT
 **Significato:** Italian Border Working Table
+
+---
+
+## IGM
+**Significato:** Individual Grid Model
+
+Riflette lo stato del sistema di trasmissione che ci si aspetta, oltre ai livelli di generazione, carico, e nodali.
 
 ---
 
