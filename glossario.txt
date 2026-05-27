@@ -1,5 +1,6 @@
 AMR = Adjustment for Minimum RAM
 CNEC = Critical Network Element with Contingency
+CVA = Coordinated Validation Adjustment
 FB = Flow Based
 FRM = Flow Reliability Margin
 IVA = Individual Validation Adjustment
