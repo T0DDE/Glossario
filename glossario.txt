@@ -8,3 +8,4 @@ LTA = Long-term Allocated Capacities
 NTC = Net Transfer Capacity
 PTDF = Power Transfer Distribution Factor
 RAM = Remaining Available Margin
+TSO = Transmission System Operator
