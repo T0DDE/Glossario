@@ -6,6 +6,7 @@ FB = Flow Based
 FRM = Flow Reliability Margin
 IVA = Individual Validation Adjustment
 LTA = Long-term Allocated Capacities
+NPF = Net Position Forecasting
 NTC = Net Transfer Capacity
 PTDF = Power Transfer Distribution Factor
 PTE = Programmazione Territoriale Efficiente
