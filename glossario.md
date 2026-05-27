@@ -14,6 +14,7 @@
 - [FB](#fb)
 - [FCA](#fca)
 - [FRM](#frm)
+- [FTR](#ftr)
 - [GLSK](#glsk)
 - [GSK](#gsk)
 - [IBWT](#ibwt)
@@ -24,6 +25,7 @@
 - [NTC](#ntc)
 - [PTDF](#ptdf)
 - [PTE](#pte)
+- [PTR](#ptr)
 - [RAM](#ram)
 - [RCC](#rcc)
 - [RSC](#rsc)
@@ -101,6 +103,15 @@ L’obiettivo è garantire capacità affidabile e fornire agli operatori strumen
 
 ---
 
+## FTR
+**Significato:** Financial Transmission Rights
+
+Un prodotto che da diritti finanziari basati sulla differenza di prezzo (o spread) tra zone. Può essere di due tipi:
+- FTR options: Il detentore ha solo il diritto di incassare lo spread positivo. **Non paga nulla se lo spread è negativo**.
+- FTR obligations: Il detentore riceve lo spread quando è positivo, ma **deve pagarlo quando è negativo**.
+
+---
+
 ## GLSK
 **Significato:** Generation and Load Shift Keys
 
@@ -152,6 +163,13 @@ Riflette lo stato del sistema di trasmissione che ci si aspetta, oltre ai livell
 
 ## PTE
 **Significato:** Programmazione Territoriale Efficiente
+
+---
+
+## PTR
+**Significato:** Physical Transmission Rights
+
+Un prodotto capacità che da diritto di uso fisico della capacità prenotata. Se non nominato, la capacità non utilizzata può essere resa disponibile per il day-ahead, con remunerazione Use It Or Sell It (UIOSI).
 
 ---
 
