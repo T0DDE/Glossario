@@ -1,2 +1,3 @@
 FB = Flow Based
 NTC = Net Transfer Capacity
+PTDF = Power Transfer Distribution Factor
