@@ -209,8 +209,11 @@ Le tipologie di PTR messi all'asta sono:
 ## PUN
 **Significato:** Prezzo Unico Nazionale
 
-Si definisce come media dei prezzi di ogni zona ponderata per la percentuale di energia acquistata in ciascuna zona rispetto all'energia totale acquistata. 
-Tutte le **offerte di acquisto** vengono valorizzate con il PUN indipendentemente dalla zona, mentre tutte le **offerte di vendita** vengono valorizzate con il prezzo determinato dall'esito del mercato nella singola zona.
+Si definisce come media dei prezzi di ogni zona ponderata per la percentuale di energia acquistata in ciascuna zona rispetto all'energia totale acquistata.
+  Tutte le **offerte di acquisto** vengono valorizzate con il PUN indipendentemente dalla zona, mentre tutte le **offerte di vendita** vengono valorizzate con il prezzo determinato dall'esito del mercato nella singola zona.
+Quindi:
+- I consumatori non subiscono nessuna penalizzazione;
+- I produttori sono incentivati a realizzare nuovi centri di produzione nelle zone ad alto costo (quelle con scarsità di offerta), contribuendo a migliorare la distribuzione dei centri di produzione​.
 
 ---
 
