@@ -2,6 +2,7 @@ AMR = Adjustment for Minimum RAM
 CNEC = Critical Network Element with Contingency
 FB = Flow Based
 FRM = Flow Reliability Margin
+IVA = Individual Validation Adjustment
 LTA = Long-term Allocated Capacities
 NTC = Net Transfer Capacity
 PTDF = Power Transfer Distribution Factor
