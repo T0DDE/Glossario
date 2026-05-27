@@ -34,6 +34,7 @@
 - [RCC](#rcc)
 - [RSC](#rsc)
 - [SDAC](#sdac)
+- [SIDC](#sidc)
 - [TSO](#tso)
 - [TTF](#ttf)
 
@@ -247,6 +248,15 @@ Gli RSC si sono evoluti in Regional Coordination Centers (RCC) in Europa, miglio
 **Significato:** Single Day Ahead Coupling
 
 Un progetto gestito dai NEMO e dai TSO dei paesi europei che vi prendono parte. Si tratta di un mercato in asta a prezzo marginale zonale, che si svolge alle 12 del giorno precedente a quello oggetto di negoziazione.
+
+---
+
+## SIDC
+**Significato:** Single IntraDay Coupling
+
+Un progetto gestito dai NEMO e dai TSO dei paesi europei che vi prendono parte. Si tratta di un mercato in *continuous trading*, in cui il **Continuous Trading Matching Algorithm** del MCO abbina in maniera continua le offerte, secondo il principio del *first come first served*, rispettando la CZC e gli Allocation Constraint.
+Il processo viene eseguito in maniera continua dalla Intraday Gate Opening (15:00 D-1) sino alla Intraday Gate Closure (un'ora prima del rilascio dell'energia).
+Gli operatori italiani hanno la possibilità di sottomettere al SIDC **offerte per portafoglio** e l'**obbligo di nominare entro H-1** le corrispondenti posizioni per unità. Per sua natura, un mercato che segue un principio di *first come first served* **non massimizza necessariamente il social welfare**.
 
 ---
 
