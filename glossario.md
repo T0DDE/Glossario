@@ -170,6 +170,12 @@ Riflette lo stato del sistema di trasmissione che ci si aspetta, oltre ai livell
 **Significato:** Physical Transmission Rights
 
 Un prodotto capacità che da diritto di uso fisico della capacità prenotata. Se non nominato, la capacità non utilizzata può essere resa disponibile per il day-ahead, con remunerazione Use It Or Sell It (UIOSI).
+Le tipologie di PTR messi all'asta sono:
+- Yearly base with reduction periods
+- Montly base with reduction periods
+- Monthly peak with reduction periods
+- Daily base with reduction periods
+- Intraday
 
 ---
 
