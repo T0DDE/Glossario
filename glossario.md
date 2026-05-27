@@ -91,6 +91,9 @@ Il processo di calcolo della capacità che si avvia nel D-2 e determina l'NTC pe
 ## FCA
 **Significato:** Forward Capacity Allocation
 
+Il regolamento FCA, che disciplina il mercato a termine dell’energia elettrica. L’FCA copre i timeframe annuale e mensile e stabilisce come i TSO calcolano in anticipo la capacità disponibile tra Paesi e la mettono a disposizione del mercato tramite aste esplicite, utilizzando una piattaforma unica europea.​
+L’obiettivo è garantire capacità affidabile e fornire agli operatori strumenti per coprirsi dal rischio nei mercati forward.
+
 ---
 
 ## FRM
