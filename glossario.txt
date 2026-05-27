@@ -1,17 +1,17 @@
-AMR = Adjustment for Minimum RAM
-BZB = Bidding Zone Borders
-CACM = Capacity Allocation and Congestion Managment
-CID = Congestion Income Distribution
-CNEC = Critical Network Element with Contingency
-CVA = Coordinated Validation Adjustment
-DQC = Data Quality Check
-FB = Flow Based
-FRM = Flow Reliability Margin
-IVA = Individual Validation Adjustment
-LTA = Long-term Allocated Capacities
-NPF = Net Position Forecasting
-NTC = Net Transfer Capacity
-PTDF = Power Transfer Distribution Factor
-PTE = Programmazione Territoriale Efficiente
-RAM = Remaining Available Margin
-TSO = Transmission System Operator
+AMR|Adjustment for Minimum RAM|
+BZB|Bidding Zone Borders|
+CACM|Capacity Allocation and Congestion Managment|
+CID|Congestion Income Distribution|
+CNEC|Critical Network Element with Contingency|
+CVA|Coordinated Validation Adjustment|
+DQC|Data Quality Check|
+FB|Flow Based|
+FRM|Flow Reliability Margin|
+IVA|Individual Validation Adjustment|
+LTA|Long-term Allocated Capacities|
+NPF|Net Position Forecasting|
+NTC|Net Transfer Capacity|
+PTDF|Power Transfer Distribution Factor|
+PTE|Programmazione Territoriale Efficiente|
+RAM|Remaining Available Margin|
+TSO|Transmission System Operator|Il gestore del sistema di trasmissione (in inglese Transmission System Operator o TSO) è un ente preposto alla trasmissione dell'energia sotto forma di gas naturale o di energia elettrica, usando opportune infrastrutture, a livello nazionale o regionale.
