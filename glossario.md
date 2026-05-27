@@ -5,6 +5,7 @@
 - [AMR](#amr)
 - [BZB](#bzb)
 - [CACM](#cacm)
+- [CCM](#ccm)
 - [CCR](#ccr)
 - [CID](#cid)
 - [CNEC](#cnec)
@@ -20,15 +21,19 @@
 - [IBWT](#ibwt)
 - [IGM](#igm)
 - [IVA](#iva)
+- [LT SM](#lt-sm)
 - [LTA](#lta)
+- [NEMO](#nemo)
 - [NPF](#npf)
 - [NTC](#ntc)
 - [PTDF](#ptdf)
 - [PTE](#pte)
 - [PTR](#ptr)
+- [PUN](#pun)
 - [RAM](#ram)
 - [RCC](#rcc)
 - [RSC](#rsc)
+- [SDAC](#sdac)
 - [TSO](#tso)
 - [TTF](#ttf)
 
@@ -46,6 +51,13 @@
 
 ## CACM
 **Significato:** Capacity Allocation and Congestion Managment
+
+---
+
+## CCM
+**Significato:** Capacity Calculation Methodology
+
+Metodologia di calcolo della capacità disponibile tra i Paesi (nel lungo termine, per la LT CCM), che permette di trasformare i vincoli fisici della rete in un valore di capacità che sia sicuro e utilizzabile dal mercato.
 
 ---
 
@@ -141,8 +153,23 @@ Riflette lo stato del sistema di trasmissione che ci si aspetta, oltre ai livell
 
 ---
 
+## LT SM
+**Significato:** Long-Term Splitting Methodology
+
+Metodologia che permette di trasformare la capacità calcolata in prodotti commerciali, definendo come suddividere la capacità tra i diversi timeframe, e come strutturare i prodotti da offrire nelle aste. 
+Si passa in questo modo dalla rete fisica a un prodotto di mercato, in modo coerente, trasparente e armonizzato a livello europeo.
+
+---
+
 ## LTA
 **Significato:** Long-term Allocated Capacities
+
+---
+
+## NEMO
+**Significato:** Nominated Electricity Market Operator
+
+Un NEMO è un'entità designata per svolgere compiti relativi a SDAC o SIDC. I NEMO cooperano su base contrattuale.
 
 ---
 
@@ -179,6 +206,14 @@ Le tipologie di PTR messi all'asta sono:
 
 ---
 
+## PUN
+**Significato:** Prezzo Unico Nazionale
+
+Si definisce come media dei prezzi di ogni zona ponderata per la percentuale di energia acquistata in ciascuna zona rispetto all'energia totale acquistata. 
+Tutte le **offerte di acquisto** vengono valorizzate con il PUN indipendentemente dalla zona, mentre tutte le **offerte di vendita** vengono valorizzate con il prezzo determinato dall'esito del mercato nella singola zona.
+
+---
+
 ## RAM
 **Significato:** Remaining Available Margin
 
@@ -202,6 +237,13 @@ Nello svolgimento delle loro attività, gli RCC contribuiscono al raggiungimento
 **Significato:** Regional Security Coordinator
 
 Gli RSC si sono evoluti in Regional Coordination Centers (RCC) in Europa, migliorando la coordinazione dei TSO.
+
+---
+
+## SDAC
+**Significato:** Single Day Ahead Coupling
+
+Un progetto gestito dai NEMO e dai TSO dei paesi europei che vi prendono parte. Si tratta di un mercato in asta a prezzo marginale zonale, che si svolge alle 12 del giorno precedente a quello oggetto di negoziazione.
 
 ---
 
