@@ -4,6 +4,7 @@
 
 - [AFRR](#afrr)
 - [AMR](#amr)
+- [BRP](#brp)
 - [BZB](#bzb)
 - [CACM](#cacm)
 - [CCM](#ccm)
@@ -16,11 +17,13 @@
 - [CZC](#czc)
 - [DACC](#dacc)
 - [DQC](#dqc)
+- [FAT](#fat)
 - [FB](#fb)
 - [FCA](#fca)
 - [FCR](#fcr)
 - [FRM](#frm)
 - [FTR](#ftr)
+- [GCT](#gct)
 - [GLSK](#glsk)
 - [GSK](#gsk)
 - [IBWT](#ibwt)
@@ -45,6 +48,7 @@
 - [SIDC](#sidc)
 - [SOB](#sob)
 - [SOGL](#sogl)
+- [TERRE](#terre)
 - [TSO](#tso)
 - [TTF](#ttf)
 
@@ -59,6 +63,11 @@ Nell'ambito delle riserve per il bilanciamento, sono pargonabili alla **riserva 
 
 ## AMR
 **Significato:** Adjustment for Minimum RAM
+
+---
+
+## BRP
+**Significato:** Balance Responsible Parties
 
 ---
 
@@ -138,6 +147,13 @@ Il processo di calcolo della capacità che si avvia nel D-2 e determina l'NTC pe
 
 ---
 
+## FAT
+**Significato:** Full Activation Time
+
+Il tempo che trascorre tra la comunicazione degli esiti all'operatore e la piena esecuzione del comando di bilanciamento.
+
+---
+
 ## FB
 **Significato:** Flow Based
 
@@ -172,6 +188,11 @@ nota: FCR paga solo per la *disponibilità di capacità*, non per l'effettivo ut
 Un prodotto che da diritti finanziari basati sulla differenza di prezzo (o spread) tra zone. Può essere di due tipi:
 - FTR options: Il detentore ha solo il diritto di incassare lo spread positivo. **Non paga nulla se lo spread è negativo**.
 - FTR obligations: Il detentore riceve lo spread quando è positivo, ma **deve pagarlo quando è negativo**.
+
+---
+
+## GCT
+**Significato:** Gate Closure Time
 
 ---
 
@@ -313,6 +334,11 @@ Nello svolgimento delle loro attività, gli RCC contribuiscono al raggiungimento
 **Significato:** Replacement Reserves
 
 Nell'ambito delle riserve di bilanciamento, corrispondono grossomodo alla riserva terziaria di sostituzione definita nel Codice di Rete Italiano (CRI).
+Il processo RR relativo all'ora **H** si articola nelle seguenti operazioni:
+- **Fino ad H-55'**: gli operatori di mercato sottomettono le loro offerte aggiornate per il mercato di bilanciamento;
+- **Da H-55' ad H-40'**: i TSO calcolano il loro fabbisogno di energia di bilanciamento da RR, effettuano le analisi di sicurezza, e calcolano gli ATC disponibili.
+- **Da H-40' ad H-32'**: la Piattaforma RR processerà le offerte ed i fabbisogni sottomessi dai TSO. La soluzione elaborata terrà conto delle restrizioni imposte dagli ATC tra le diverse zone;
+- **Entro H-30'**: la piattaforma RR comunicherà i risultati (offerte accettate, fabbisogni soddisfatti ed ATC residui) ai TSO che a loro volta li comunicheranno agli operatori di mercato.
 
 ---
 
@@ -350,6 +376,13 @@ Si tratta del modulo che gestisce gli ordini (le offerte): ciascun ordine è ide
 **Significato:** System Operation GuideLines
 
 Secondo i principi delle SOGL i TSDO hanno l'obbligo di dimensionare i propri fabbisogni di riserva.
+
+---
+
+## TERRE
+**Significato:** Trans European Replacement Reserves Exchange
+
+Il progetto TERRE nasce per implementare scambi di Replacement Reserves (RR) in linea con l'Electricity Balancing GuideLine (EBGL). TERRE fornisce il *framework tecnico e operativo* e definisce le regole di mercato per governare il funzionamento dei **mercati del bilanciamento**. Delinea le regole di procura della capacità di bilanciamento, di allocazione della capacità di trasmissione per scambi transfrontalieri, per l'attivazione dell'energia di bilanciamento, e per il regolamento finanziario dei Balance Responsible Parties (BRP), i responsabili di bilanciamento.
 
 ---
 
