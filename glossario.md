@@ -357,19 +357,20 @@ Un NEMO è un'entità designata per svolgere compiti relativi a SDAC o SIDC. I N
 ## PICASSO
 **Significato:** Platform for the International Coordination of Automated frequency restoration Stable System Operation
 
-PICASSO è il progetto europeo promosso dai TSO (Transmission System Operators) aderenti a ENTSO-E per la realizzazione della piattaforma europea dedicata allo scambio di energia di bilanciamento proveniente dalle riserve di ripristino della frequenza ad attivazione automatica (*aFRR – automatic Frequency Restoration Reserve*).  
-La piattaforma è stata sviluppata in conformità all’Articolo 21 del Regolamento (UE) 2017/2195 (*Electricity Balancing Guideline – EB GL*), che definisce le regole europee per l’integrazione dei mercati di bilanciamento dell’energia elettrica.  
-PICASSO consente ai TSO europei di:  
-- condividere offerte di energia di bilanciamento aFRR;  
-- attivare risorse disponibili anche oltre i confini nazionali;  
-- ottimizzare economicamente il bilanciamento del sistema elettrico europeo;  
-- utilizzare in modo efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.  
-La piattaforma esegue un processo centralizzato di ottimizzazione che seleziona automaticamente le offerte economicamente più efficienti, nel rispetto dei vincoli di rete, della capacità transfrontaliera disponibile e delle esigenze di sicurezza del sistema.  
-PICASSO rappresenta uno dei principali progetti europei per l’integrazione dei mercati di bilanciamento e contribuisce:  
-- al miglioramento della stabilità della frequenza del sistema elettrico europeo;  
-- alla riduzione dei costi complessivi di bilanciamento;  
-- all’integrazione delle fonti rinnovabili non programmabili;  
-- all’aumento dell’efficienza e della sicurezza operativa del sistema elettrico interconnesso europeo.
+PICASSO è il progetto europeo promosso dai TSO (Transmission System Operators) aderenti a ENTSO-E per la realizzazione della piattaforma europea dedicata allo scambio di energia di bilanciamento proveniente dalle riserve di ripristino della frequenza ad attivazione automatica (*aFRR – automatic Frequency Restoration Reserve*).
+  La piattaforma è stata sviluppata in conformità all’Articolo 21 del Regolamento (UE) 2017/2195 (*Electricity Balancing Guideline – EB GL*), che definisce le regole europee per l’integrazione dei mercati di bilanciamento dell’energia elettrica.
+  PICASSO consente ai TSO europei di:
+  - condividere offerte di energia di bilanciamento aFRR;
+  - attivare risorse disponibili anche oltre i confini nazionali;
+  - ottimizzare economicamente il bilanciamento del sistema elettrico europeo;
+  - utilizzare in modo efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.
+  La piattaforma esegue un processo centralizzato di ottimizzazione che seleziona automaticamente le offerte economicamente più efficienti, nel rispetto dei vincoli di rete, della capacità transfrontaliera disponibile e delle esigenze di sicurezza del sistema.
+  PICASSO rappresenta uno dei principali progetti europei per l’integrazione dei mercati di bilanciamento e contribuisce:
+  - al miglioramento della stabilità della frequenza del sistema elettrico europeo;
+  - alla riduzione dei costi complessivi di bilanciamento;
+  - all’integrazione delle fonti rinnovabili non programmabili;
+  - all’aumento dell’efficienza e della sicurezza operativa del sistema elettrico interconnesso europeo.
+PICASSO avrà un processo quartorario; quello relativo al quarto d’ora q si articola nelle seguenti operazioni:​
 
 ---
 
