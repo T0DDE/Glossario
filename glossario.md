@@ -2,60 +2,60 @@
 
 ## Indice
 
-- [Glossario Acronimi](#glossario-acronimi)
-  - [Indice](#indice)
-  - [AFRR](#afrr)
-  - [AMR](#amr)
-  - [BESS](#bess)
-  - [BRP](#brp)
-  - [BZB](#bzb)
-  - [CACM](#cacm)
-  - [CCM](#ccm)
-  - [CCR](#ccr)
-  - [CID](#cid)
-  - [CMM](#cmm)
-  - [CNEC](#cnec)
-  - [CRIDA](#crida)
-  - [CVA](#cva)
-  - [CZC](#czc)
-  - [DACC](#dacc)
-  - [DQC](#dqc)
-  - [FAT](#fat)
-  - [FB](#fb)
-  - [FCA](#fca)
-  - [FCR](#fcr)
-  - [FRM](#frm)
-  - [FTR](#ftr)
-  - [GCT](#gct)
-  - [GLSK](#glsk)
-  - [GSK](#gsk)
-  - [IBWT](#ibwt)
-  - [IDA](#ida)
-  - [IGM](#igm)
-  - [IVA](#iva)
-  - [LT SM](#lt-sm)
-  - [LTA](#lta)
-  - [MFRR](#mfrr)
-  - [MTU](#mtu)
-  - [NEMO](#nemo)
-  - [NPF](#npf)
-  - [NTC](#ntc)
-  - [PTDF](#ptdf)
-  - [PTE](#pte)
-  - [PTR](#ptr)
-  - [PUN](#pun)
-  - [RAM](#ram)
-  - [RCC](#rcc)
-  - [RR](#rr)
-  - [RSC](#rsc)
-  - [SDAC](#sdac)
-  - [SIDC](#sidc)
-  - [SOB](#sob)
-  - [SOGL](#sogl)
-  - [TERRE](#terre)
-  - [TSO](#tso)
-  - [TTF](#ttf)
-  - [XBID](#xbid)
+- [AFRR](#afrr)
+- [AMR](#amr)
+- [BESS](#bess)
+- [BRP](#brp)
+- [BZB](#bzb)
+- [CACM](#cacm)
+- [CCM](#ccm)
+- [CCR](#ccr)
+- [CID](#cid)
+- [CMM](#cmm)
+- [CNEC](#cnec)
+- [CRIDA](#crida)
+- [CVA](#cva)
+- [CZC](#czc)
+- [DACC](#dacc)
+- [DQC](#dqc)
+- [FAT](#fat)
+- [FB](#fb)
+- [FCA](#fca)
+- [FCR](#fcr)
+- [FRM](#frm)
+- [FTR](#ftr)
+- [GCT](#gct)
+- [GLSK](#glsk)
+- [GSK](#gsk)
+- [IBWT](#ibwt)
+- [IDA](#ida)
+- [IGM](#igm)
+- [IVA](#iva)
+- [LT SM](#lt-sm)
+- [LTA](#lta)
+- [MARI](#mari)
+- [MFRR](#mfrr)
+- [MTU](#mtu)
+- [NEMO](#nemo)
+- [NPF](#npf)
+- [NTC](#ntc)
+- [PICASSO](#picasso)
+- [PTDF](#ptdf)
+- [PTE](#pte)
+- [PTR](#ptr)
+- [PUN](#pun)
+- [RAM](#ram)
+- [RCC](#rcc)
+- [RR](#rr)
+- [RSC](#rsc)
+- [SDAC](#sdac)
+- [SIDC](#sidc)
+- [SOB](#sob)
+- [SOGL](#sogl)
+- [TERRE](#terre)
+- [TSO](#tso)
+- [TTF](#ttf)
+- [XBID](#xbid)
 
 ---
 
@@ -281,6 +281,26 @@ Si passa in questo modo dalla rete fisica a un prodotto di mercato, in modo coer
 
 ---
 
+## MARI
+**Significato:** Manually Activated Reserves Initiative
+
+MARI è il progetto europeo promosso dai TSO (Transmission System Operators) aderenti a ENTSO-E per la realizzazione della piattaforma europea dedicata allo scambio di energia di bilanciamento proveniente dalle riserve di ripristino della frequenza ad attivazione manuale (*mFRR – manual Frequency Restoration Reserve*).  
+La piattaforma è stata sviluppata in conformità all’Articolo 20 del Regolamento (UE) 2017/2195 (*Electricity Balancing Guideline – EB GL*), che definisce le regole europee per l’integrazione dei mercati di bilanciamento dell’energia elettrica.  
+MARI consente ai TSO europei di:  
+- condividere offerte di energia di bilanciamento mFRR;  
+- attivare risorse disponibili anche oltre i confini nazionali;  
+- ottimizzare economicamente il processo di bilanciamento;  
+- utilizzare in modo efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.  
+La piattaforma esegue un processo centralizzato di ottimizzazione che seleziona le offerte economicamente più efficienti nel rispetto dei vincoli di rete, della capacità transfrontaliera disponibile e dei requisiti di sicurezza del sistema elettrico europeo.  
+MARI supporta l’attivazione coordinata delle mFRR, tipicamente utilizzate per la gestione di sbilanciamenti più persistenti o significativi e per il ripristino delle riserve automatiche consumate durante le perturbazioni di frequenza.  
+Il progetto rappresenta uno dei principali strumenti europei per l’integrazione dei mercati di bilanciamento e contribuisce:  
+- al miglioramento della sicurezza operativa del sistema elettrico europeo;  
+- alla riduzione dei costi complessivi di bilanciamento;  
+- all’incremento della flessibilità del sistema;  
+- all’integrazione delle fonti rinnovabili non programmabili nel mercato elettrico europeo.
+
+---
+
 ## MFRR
 **Significato:** manual Frequency Restoration Reserves
 
@@ -331,6 +351,25 @@ Un NEMO è un'entità designata per svolgere compiti relativi a SDAC o SIDC. I N
 
 ## NTC
 **Significato:** Net Transfer Capacity
+
+---
+
+## PICASSO
+**Significato:** Platform for the International Coordination of Automated frequency restoration Stable System Operation
+
+PICASSO è il progetto europeo promosso dai TSO (Transmission System Operators) aderenti a ENTSO-E per la realizzazione della piattaforma europea dedicata allo scambio di energia di bilanciamento proveniente dalle riserve di ripristino della frequenza ad attivazione automatica (*aFRR – automatic Frequency Restoration Reserve*).  
+La piattaforma è stata sviluppata in conformità all’Articolo 21 del Regolamento (UE) 2017/2195 (*Electricity Balancing Guideline – EB GL*), che definisce le regole europee per l’integrazione dei mercati di bilanciamento dell’energia elettrica.  
+PICASSO consente ai TSO europei di:  
+- condividere offerte di energia di bilanciamento aFRR;  
+- attivare risorse disponibili anche oltre i confini nazionali;  
+- ottimizzare economicamente il bilanciamento del sistema elettrico europeo;  
+- utilizzare in modo efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.  
+La piattaforma esegue un processo centralizzato di ottimizzazione che seleziona automaticamente le offerte economicamente più efficienti, nel rispetto dei vincoli di rete, della capacità transfrontaliera disponibile e delle esigenze di sicurezza del sistema.  
+PICASSO rappresenta uno dei principali progetti europei per l’integrazione dei mercati di bilanciamento e contribuisce:  
+- al miglioramento della stabilità della frequenza del sistema elettrico europeo;  
+- alla riduzione dei costi complessivi di bilanciamento;  
+- all’integrazione delle fonti rinnovabili non programmabili;  
+- all’aumento dell’efficienza e della sicurezza operativa del sistema elettrico interconnesso europeo.
 
 ---
 
@@ -473,7 +512,20 @@ Secondo i principi delle SOGL i TSDO hanno l'obbligo di dimensionare i propri fa
 ## TERRE
 **Significato:** Trans European Replacement Reserves Exchange
 
-Il progetto TERRE nasce per implementare scambi di Replacement Reserves (RR) in linea con l'Electricity Balancing GuideLine (EBGL). TERRE fornisce il *framework tecnico e operativo* e definisce le regole di mercato per governare il funzionamento dei **mercati del bilanciamento**. Delinea le regole di procura della capacità di bilanciamento, di allocazione della capacità di trasmissione per scambi transfrontalieri, per l'attivazione dell'energia di bilanciamento, e per il regolamento finanziario dei Balance Responsible Parties (BRP), i responsabili di bilanciamento.
+TERRE è il progetto europeo promosso dai TSO (Transmission System Operators) aderenti a ENTSO-E per la realizzazione della piattaforma comune dedicata allo scambio di energia di bilanciamento proveniente dalle riserve di sostituzione (*RR – Replacement Reserves*).  
+La piattaforma è stata sviluppata in conformità all’Articolo 19 del Regolamento (UE) 2017/2195 (*Electricity Balancing Guideline – EB GL*), che stabilisce le regole per l’integrazione dei mercati europei di bilanciamento dell’energia elettrica.  
+TERRE consente ai TSO partecipanti di:  
+- condividere e attivare offerte di energia di bilanciamento RR a livello transfrontaliero;  
+- coordinare l’utilizzo delle risorse di bilanciamento tra diverse aree di controllo;  
+- ottimizzare economicamente l’approvvigionamento della riserva terziaria di sostituzione;  
+- utilizzare in modo efficiente la capacità di interconnessione disponibile tra i sistemi elettrici nazionali.  
+La piattaforma opera tramite un algoritmo di ottimizzazione centralizzato che seleziona le offerte più efficienti nel rispetto dei vincoli di rete e della capacità transfrontaliera disponibile, garantendo al contempo la sicurezza operativa del sistema elettrico europeo.  
+TERRE si colloca nell’architettura dei mercati di bilanciamento europei come la piattaforma dedicata alle riserve RR, che intervengono su orizzonti temporali più lunghi rispetto ad aFRR e mFRR, con l’obiettivo di ripristinare le riserve operative e supportare il bilanciamento del sistema nel medio periodo.  
+Il progetto contribuisce:  
+- al miglioramento dell’efficienza economica del bilanciamento;  
+- alla riduzione dei costi complessivi del sistema elettrico europeo;  
+- all’aumento della sicurezza e affidabilità del sistema interconnesso;  
+- all’integrazione dei mercati elettrici nazionali in un unico mercato europeo.
 
 ---
 
@@ -483,7 +535,6 @@ Il progetto TERRE nasce per implementare scambi di Replacement Reserves (RR) in 
 Il gestore del sistema di trasmissione (in inglese Transmission System Operator o TSO) è un ente preposto alla trasmissione dell'energia sotto forma di gas naturale o di energia elettrica, usando opportune infrastrutture, a livello nazionale o regionale.
 
 ---
-
 
 ## TTF
 **Significato:** Technical Task Force
