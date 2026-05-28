@@ -51,6 +51,7 @@
 - [RCC](#rcc)
 - [RR](#rr)
 - [RSC](#rsc)
+- [RTE](#rte)
 - [SDAC](#sdac)
 - [SIDC](#sidc)
 - [SOB](#sob)
@@ -489,6 +490,13 @@ Le RR rappresentano uno degli strumenti europei fondamentali per il bilanciament
 **Significato:** Regional Security Coordinator
 
 Gli RSC si sono evoluti in Regional Coordination Centers (RCC) in Europa, migliorando la coordinazione dei TSO.
+
+---
+
+## RTE
+**Significato:** Réseau de Transport d'Électricité
+
+TSO francese.
 
 ---
 
