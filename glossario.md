@@ -10,6 +10,7 @@
 - [CID](#cid)
 - [CMM](#cmm)
 - [CNEC](#cnec)
+- [CRIDA](#crida)
 - [CVA](#cva)
 - [CZC](#czc)
 - [DACC](#dacc)
@@ -90,6 +91,19 @@ Lista di elementi "critici" della rete (e contingenze N-1). Elementi rilevanti d
 
 ---
 
+## CRIDA
+**Significato:** Complementary Regional IntraDay Auction
+
+Rappresentano una implementazione anticipata a livello regionale della metodologia europea per l'IntraDay Cross Zonal Capacity Pricing, ai sensi dell'art.55 del CACM.
+Le CRIDA permettono di fornire **segnali di prezzo della capacità interzonale** nel timeframe intraday, e di estrarre la **rendita da congestioneéé derivante dall'allocazione della capacità.
+Orari delle CRIDA:
+- apertura alle 15:00 D-1 (ore negoziabili 0:00-24:00 D) con la capacità residua del mercato del giorno prima;​
+- seconda asta alle 22:00 D-1 (ore negoziabili 0:00-24:00 D) con la capacità disponibile in esito al processo di ricalcolo IDCC1;​
+- terza asta alle 10:00 D (ore negoziabili 12:00-24:00 D) con la capacità disponibile in esito al processo di ricalcolo IDCC2.
+Durante l'esecuzione delle CRIDA, il *continuous trading* viene interrotto.
+
+---
+
 ## CVA
 **Significato:** Coordinated Validation Adjustment
 
@@ -160,9 +174,13 @@ Un prodotto che da diritti finanziari basati sulla differenza di prezzo (o sprea
 **Significato:** IntraDay Auctions
 
 Le IDA sono organizzate come aste *implicite* dove gli ordini raccolti vengono accoppiati, e la Cross Zonal Capacity (CZC) viene allocata simultaneamente per diversi Bidding Zone Borders (BZB).
-Le IDA tengono conto di tutti gli ordini validi sottomessi per le rispettive aste, e determinano i *clearing price* per le BZ rilevanti in base agli ordini accoppiati. 
-Sono la parte ad asta del Single IntraDay Coupling (SIDC), e completano il mercato SIDC che prima era basato solamente su metodi di trading continuo (come XBID). Sono state implementate in Europa il 13 giugno 2024, al fine di permettere di dare prezzi alla capacità transfrontaliera nel timeframe intragiornaliero.
-Il loro scopo è quello di *armonizzare* il calcolo e l'allocazione delle capacità transfrontaliere per rifletterne la carenza in un dato momento, e quindi mandare un segnale di prezzo adeguato al mercato.
+  Le IDA tengono conto di tutti gli ordini validi sottomessi per le rispettive aste, e determinano i *clearing price* per le BZ rilevanti in base agli ordini accoppiati.
+  Sono la parte ad asta del Single IntraDay Coupling (SIDC), e completano il mercato SIDC che prima era basato solamente su metodi di trading continuo (come XBID). Sono state implementate in Europa il 13 giugno 2024, al fine di permettere di dare prezzi alla capacità transfrontaliera nel timeframe intragiornaliero.
+  Il loro scopo è quello di *armonizzare* il calcolo e l'allocazione delle capacità transfrontaliere per rifletterne la carenza in un dato momento, e quindi mandare un segnale di prezzo adeguato al mercato.
+  **Orari**:
+- **IDA1**: Gate Closure Time for market parties at D-1 15h. Allocated period D [0h-24h];
+- **IDA2**: Gate Closure Time for market parties at D-1 22h. Allocated period D [0h-24h];
+- **IDA3**: Gate Closure Time for market parties at D 10h. Allocated period D [12h-24h].
 
 ---
 
