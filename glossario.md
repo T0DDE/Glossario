@@ -29,7 +29,6 @@
 - [IBWT](#ibwt)
 - [IDA](#ida)
 - [IGM](#igm)
-- [IL SIDC SI ARTICOLA IN DUE COMPONENTI PRINCIPALI:](#il-sidc-si-articola-in-due-componenti-principali)
 - [IVA](#iva)
 - [LT SM](#lt-sm)
 - [LTA](#lta)
@@ -235,21 +234,6 @@ Riflette lo stato del sistema di trasmissione che ci si aspetta, oltre ai livell
 
 ---
 
-## IL SIDC SI ARTICOLA IN DUE COMPONENTI PRINCIPALI:
-**Significato:** - **XBID Continuous Trading**
-
-Mercato intraday continuo europeo basato sul principio del *first come, first served*.  
-  Gli ordini vengono abbinati in tempo reale dal **Continuous Trading Matching Algorithm** del MCO (Market Coupling Operator), nel rispetto della capacità transfrontaliera disponibile (CZC – Cross Zonal Capacity) e degli eventuali vincoli di allocazione (*Allocation Constraints*).  
-  Il trading continuo è disponibile dalla **Intraday Gate Opening (IDO)** fino alla **Intraday Gate Closure (IDC)**, generalmente fissata a un’ora prima della consegna dell’energia.  
-- **IDA – Intraday Auctions**  
-  Aste intraday europee implicite introdotte per integrare il continuous trading e migliorare l’efficienza allocativa del mercato.  
-  Le IDA consentono un accoppiamento simultaneo di energia e capacità transfrontaliera attraverso aste pan-europee svolte in specifiche finestre temporali durante la giornata operativa.  
-  A differenza del continuous trading, il meccanismo d’asta mira alla massimizzazione del *social welfare*.  
-Nel contesto italiano, gli operatori possono sottomettere al SIDC offerte per portafoglio e sono tenuti a nominare entro H-1 le corrispondenti posizioni sulle singole unità.  
-Il SIDC rappresenta uno degli strumenti fondamentali dell’integrazione del mercato elettrico europeo, contribuendo alla sicurezza del sistema, alla flessibilità operativa e all’integrazione delle energie rinnovabili.
-
----
-
 ## IVA
 **Significato:** Individual Validation Adjustment
 
@@ -375,7 +359,19 @@ Un progetto gestito dai NEMO e dai TSO dei paesi europei che vi prendono parte. 
 ## SIDC
 **Significato:** Single IntraDay Coupling
 
-Il SIDC (Single Intraday Coupling) è il meccanismo europeo di integrazione del mercato intraday dell’energia elettrica, gestito congiuntamente dai NEMO (Nominated Electricity Market Operators) e dai TSO (Transmission System Operators) dei paesi partecipanti.
+Il SIDC (Single Intraday Coupling) è il meccanismo europeo di integrazione del mercato intraday dell’energia elettrica, gestito congiuntamente dai NEMO (Nominated Electricity Market Operators) e dai TSO (Transmission System Operators) dei paesi partecipanti.  
+L’obiettivo del SIDC è consentire agli operatori di scambiare energia elettrica in prossimità del tempo reale, favorendo il bilanciamento del sistema elettrico europeo, l’integrazione delle fonti rinnovabili e un utilizzo più efficiente della capacità di interconnessione transfrontaliera.  
+Il SIDC si articola in due componenti principali:
+- **XBID Continuous Trading**  
+  Mercato intraday continuo europeo basato sul principio del *first come, first served*.  
+  Gli ordini vengono abbinati in tempo reale dal **Continuous Trading Matching Algorithm** del MCO (Market Coupling Operator), nel rispetto della capacità transfrontaliera disponibile (CZC – Cross Zonal Capacity) e degli eventuali vincoli di allocazione (*Allocation Constraints*).  
+  Il trading continuo è disponibile dalla **Intraday Gate Opening (IDO)** fino alla **Intraday Gate Closure (IDC)**, generalmente fissata a un’ora prima della consegna dell’energia.  
+- **IDA – Intraday Auctions**  
+  Aste intraday europee implicite introdotte per integrare il continuous trading e migliorare l’efficienza allocativa del mercato.  
+  Le IDA consentono un accoppiamento simultaneo di energia e capacità transfrontaliera attraverso aste pan-europee svolte in specifiche finestre temporali durante la giornata operativa.  
+  A differenza del continuous trading, il meccanismo d’asta mira alla massimizzazione del *social welfare*.  
+Nel contesto italiano, gli operatori possono sottomettere al SIDC offerte per portafoglio e sono tenuti a nominare entro H-1 le corrispondenti posizioni sulle singole unità.  
+Il SIDC rappresenta uno degli strumenti fondamentali dell’integrazione del mercato elettrico europeo, contribuendo alla sicurezza del sistema, alla flessibilità operativa e all’integrazione delle energie rinnovabili.
 
 ---
 
