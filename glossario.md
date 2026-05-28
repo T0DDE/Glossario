@@ -2,6 +2,7 @@
 
 ## Indice
 
+- [- **IDA – INTRADAY AUCTIONS**](#--ida--intraday-auctions)
 - [AFRR](#afrr)
 - [AMR](#amr)
 - [BRP](#brp)
@@ -32,6 +33,7 @@
 - [IVA](#iva)
 - [LT SM](#lt-sm)
 - [LTA](#lta)
+- [MERCATO INTRADAY CONTINUO EUROPEO BASATO SUL PRINCIPIO DEL *FIRST COME, FIRST SERVED*.](#mercato-intraday-continuo-europeo-basato-sul-principio-del-first-come-first-served)
 - [MFRR](#mfrr)
 - [NEMO](#nemo)
 - [NPF](#npf)
@@ -51,6 +53,14 @@
 - [TERRE](#terre)
 - [TSO](#tso)
 - [TTF](#ttf)
+
+---
+
+## - **IDA – INTRADAY AUCTIONS**
+**Significato:** Aste intraday europee implicite introdotte per integrare il continuous trading e migliorare l’efficienza allocativa del mercato.
+
+Le IDA consentono un accoppiamento simultaneo di energia e capacità transfrontaliera attraverso aste pan-europee svolte in specifiche finestre temporali durante la giornata operativa.  
+  A differenza del continuous trading, il meccanismo d’asta mira alla massimizzazione del *social welfare*.
 
 ---
 
@@ -252,6 +262,11 @@ Si passa in questo modo dalla rete fisica a un prodotto di mercato, in modo coer
 
 ---
 
+## MERCATO INTRADAY CONTINUO EUROPEO BASATO SUL PRINCIPIO DEL *FIRST COME, FIRST SERVED*.
+**Significato:** Gli ordini vengono abbinati in tempo reale dal **Continuous Trading Matching Algorithm** del MCO (Market Coupling Operator), nel rispetto della capacità transfrontaliera disponibile (CZC – Cross Zonal Capacity) e degli eventuali vincoli di allocazione (*Allocation Constraints*).
+
+---
+
 ## MFRR
 **Significato:** manual Frequency Restoration Reserves
 
@@ -359,9 +374,7 @@ Un progetto gestito dai NEMO e dai TSO dei paesi europei che vi prendono parte. 
 ## SIDC
 **Significato:** Single IntraDay Coupling
 
-Un progetto gestito dai NEMO e dai TSO dei paesi europei che vi prendono parte. Si tratta di un mercato in *continuous trading*, in cui il **Continuous Trading Matching Algorithm** del MCO abbina in maniera continua le offerte, secondo il principio del *first come first served*, rispettando la CZC e gli Allocation Constraint.
-Il processo viene eseguito in maniera continua dalla Intraday Gate Opening (15:00 D-1) sino alla Intraday Gate Closure (un'ora prima del rilascio dell'energia).
-Gli operatori italiani hanno la possibilità di sottomettere al SIDC **offerte per portafoglio** e l'**obbligo di nominare entro H-1** le corrispondenti posizioni per unità. Per sua natura, un mercato che segue un principio di *first come first served* **non massimizza necessariamente il social welfare**.
+Il SIDC (Single Intraday Coupling) è il meccanismo europeo di integrazione del mercato intraday dell’energia elettrica, gestito congiuntamente dai NEMO (Nominated Electricity Market Operators) e dai TSO (Transmission System Operators) dei paesi partecipanti.
 
 ---
 
