@@ -29,6 +29,7 @@
 - [GSK](#gsk)
 - [IBWT](#ibwt)
 - [IDA](#ida)
+- [IGCC](#igcc)
 - [IGM](#igm)
 - [IVA](#iva)
 - [LT SM](#lt-sm)
@@ -253,6 +254,14 @@ Le IDA sono organizzate come aste *implicite* dove gli ordini raccolti vengono a
 - **IDA1**: Gate Closure Time for market parties at D-1 15h. Allocated period D [0h-24h];
 - **IDA2**: Gate Closure Time for market parties at D-1 22h. Allocated period D [0h-24h];
 - **IDA3**: Gate Closure Time for market parties at D 10h. Allocated period D [12h-24h].
+
+---
+
+## IGCC
+**Significato:** International Grid Control Cooperation
+
+Il processo, integrato in PICASSO, che effettua la compensazione degli squilibri delle riserve automatiche di aFRR.
+La compensazione degli aquilibri è il processo tramite il quale due o più TSO evitano l'attivazione simultanea delle riserve di ripristino della frequenza (FRR) in direzioni opposte, tenendo conto dei rispettivi errori di controllo del ripristino della frequenza, nonché delle FRR attivate, e correggendo di conseguenza l'input dei processi di ripristino della frequenza coinvolti.
 
 ---
 
