@@ -3,6 +3,7 @@
 ## Indice
 
 - [AMR](#amr)
+- [BESS](#bess)
 - [BZB](#bzb)
 - [CACM](#cacm)
 - [CID](#cid)
@@ -24,6 +25,13 @@
 
 ## AMR
 **Significato:** Adjustment for Minimum RAM
+
+---
+
+## BESS
+**Significato:** Battery Energy Storage System
+
+È un impianto che consente di immagazzinare energia elettrica in batterie su larga scala, per poi rilasciarla quando necessario. In pratica funziona come una "grande batteria" collegata alla rete elettrica.
 
 ---
 
