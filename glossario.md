@@ -52,6 +52,7 @@
 - [TERRE](#terre)
 - [TSO](#tso)
 - [TTF](#ttf)
+- [XBID](#xbid)
 
 ---
 
@@ -427,5 +428,32 @@ Il gestore del sistema di trasmissione (in inglese Transmission System Operator 
 **Significato:** Technical Task Force
 
 Si tratta di un gruppo di lavoro permanente Italian Border Working Table (IBWT) composto da Terna e i TSO confinanti.
+
+---
+
+## XBID
+**Significato:** Cross Border IntraDay
+
+XBID è la piattaforma europea di mercato intraday continuo che costituisce una delle componenti operative del SIDC (Single Intraday Coupling).  
+Il progetto XBID è gestito congiuntamente dai NEMO (Nominated Electricity Market Operators) e dai TSO (Transmission System Operators) europei con l’obiettivo di consentire la negoziazione continua transfrontaliera dell’energia elettrica in prossimità del tempo reale.  
+Il mercato XBID permette agli operatori di modificare le proprie posizioni commerciali dopo la chiusura del mercato day-ahead, così da gestire:  
+- errori previsionali della domanda;  
+- variazioni nella produzione da fonti rinnovabili;  
+- indisponibilità di impianti o rete;  
+- esigenze di bilanciamento e ottimizzazione del portafoglio.  
+XBID opera tramite un modello di *continuous trading*:  
+- gli ordini vengono inseriti e abbinati in tempo reale;  
+- il matching avviene secondo il principio *first come, first served*;  
+- il sistema verifica continuamente la disponibilità della capacità transfrontaliera (CZC – Cross Zonal Capacity) e gli eventuali *Allocation Constraints*.  
+L’abbinamento degli ordini è effettuato dal **Continuous Trading Matching Algorithm** del MCO (Market Coupling Operator), che consente l’esecuzione automatica delle transazioni tra le diverse zone di mercato europee.  
+Il mercato XBID:  
+- apre alle ore 15:00 del giorno D-1 (*Intraday Gate Opening*);  
+- rimane attivo in maniera continua fino alle ore 23:15 del giorno D;  
+- consente la negoziazione delle singole MTU fino a 30 minuti prima della relativa delivery (*Intraday Gate Closure* della specifica MTU).  
+Esempio:  
+- la MTU 48, corrispondente all’intervallo 12:00–12:15 del giorno D, è negoziabile fino alle ore 11:30 del giorno D.  
+Nel contesto italiano, gli operatori possono sottomettere offerte per portafoglio e devono successivamente nominare entro H-1 le corrispondenti posizioni sulle singole unità.  
+A differenza dei mercati ad asta implicita come lo SDAC o le IDA, il modello XBID basato su *continuous trading* non garantisce necessariamente la massimizzazione del *social welfare*, ma privilegia velocità, flessibilità operativa e capacità di aggiustamento in tempo reale delle posizioni di mercato.  
+XBID rappresenta oggi uno degli strumenti fondamentali per l’integrazione del mercato elettrico europeo e per la gestione efficiente della crescente produzione da fonti rinnovabili non programmabili.
 
 ---
