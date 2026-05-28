@@ -358,19 +358,27 @@ Un NEMO è un'entità designata per svolgere compiti relativi a SDAC o SIDC. I N
 **Significato:** Platform for the International Coordination of Automated frequency restoration Stable System Operation
 
 PICASSO è il progetto europeo promosso dai TSO (Transmission System Operators) aderenti a ENTSO-E per la realizzazione della piattaforma europea dedicata allo scambio di energia di bilanciamento proveniente dalle riserve di ripristino della frequenza ad attivazione automatica (*aFRR – automatic Frequency Restoration Reserve*).
-  La piattaforma è stata sviluppata in conformità all’Articolo 21 del Regolamento (UE) 2017/2195 (*Electricity Balancing Guideline – EB GL*), che definisce le regole europee per l’integrazione dei mercati di bilanciamento dell’energia elettrica.
-  PICASSO consente ai TSO europei di:
-  - condividere offerte di energia di bilanciamento aFRR;
-  - attivare risorse disponibili anche oltre i confini nazionali;
-  - ottimizzare economicamente il bilanciamento del sistema elettrico europeo;
-  - utilizzare in modo efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.
-  La piattaforma esegue un processo centralizzato di ottimizzazione che seleziona automaticamente le offerte economicamente più efficienti, nel rispetto dei vincoli di rete, della capacità transfrontaliera disponibile e delle esigenze di sicurezza del sistema.
-  PICASSO rappresenta uno dei principali progetti europei per l’integrazione dei mercati di bilanciamento e contribuisce:
-  - al miglioramento della stabilità della frequenza del sistema elettrico europeo;
-  - alla riduzione dei costi complessivi di bilanciamento;
-  - all’integrazione delle fonti rinnovabili non programmabili;
-  - all’aumento dell’efficienza e della sicurezza operativa del sistema elettrico interconnesso europeo.
+    La piattaforma è stata sviluppata in conformità all’Articolo 21 del Regolamento (UE) 2017/2195 (*Electricity Balancing Guideline – EB GL*), che definisce le regole europee per l’integrazione dei mercati di bilanciamento dell’energia elettrica.
+    PICASSO consente ai TSO europei di:
+    - condividere offerte di energia di bilanciamento aFRR;
+    - attivare risorse disponibili anche oltre i confini nazionali;
+    - ottimizzare economicamente il bilanciamento del sistema elettrico europeo;
+    - utilizzare in modo efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.
+    La piattaforma esegue un processo centralizzato di ottimizzazione che seleziona automaticamente le offerte economicamente più efficienti, nel rispetto dei vincoli di rete, della capacità transfrontaliera disponibile e delle esigenze di sicurezza del sistema.
+    PICASSO rappresenta uno dei principali progetti europei per l’integrazione dei mercati di bilanciamento e contribuisce:
+    - al miglioramento della stabilità della frequenza del sistema elettrico europeo;
+    - alla riduzione dei costi complessivi di bilanciamento;
+    - all’integrazione delle fonti rinnovabili non programmabili;
+    - all’aumento dell’efficienza e della sicurezza operativa del sistema elettrico interconnesso europeo.
 PICASSO avrà un processo quartorario; quello relativo al quarto d’ora q si articola nelle seguenti operazioni:​
+   -  Terna riceve le offerte dagli operatori abilitati per il servizio di aFRR (q-25’) ​
+    - Terna invia a PICASSO offerte coerenti con il prodotto standard della aFRR (conversione delle offerte) (q-10’)​
+    - Terna calcola ed invia l’ATC residuo tra la Control Area e le zone di mercato confinanti (q-10’)​
+    PICASSO ottimizza l’attivazione delle offerte ed il soddisfacimento dei fabbisogni rispettando i vincoli sottomessi​
+    - PICASSO comunica a ciascun TSO le offerte accettate, i fabbisogni soddisfatti ed i relativi prezzi ​
+    - PICASSO invia ai TSO i XB schedule e l’ATC residuo​
+    - PICASSO calcola i flussi commerciali tra le diverse aree di mercato, definendo il settlement tra i diversi TSO​
+    - Terna comunica agli operatori i risultati dell’ottimizzazione
 
 ---
 
