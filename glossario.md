@@ -8,8 +8,10 @@
 - [CCM](#ccm)
 - [CCR](#ccr)
 - [CID](#cid)
+- [CMM](#cmm)
 - [CNEC](#cnec)
 - [CVA](#cva)
+- [CZC](#czc)
 - [DACC](#dacc)
 - [DQC](#dqc)
 - [FB](#fb)
@@ -19,6 +21,7 @@
 - [GLSK](#glsk)
 - [GSK](#gsk)
 - [IBWT](#ibwt)
+- [IDA](#ida)
 - [IGM](#igm)
 - [IVA](#iva)
 - [LT SM](#lt-sm)
@@ -35,6 +38,7 @@
 - [RSC](#rsc)
 - [SDAC](#sdac)
 - [SIDC](#sidc)
+- [SOB](#sob)
 - [TSO](#tso)
 - [TTF](#ttf)
 
@@ -74,6 +78,11 @@ Sono definite nell'articolo 2 del regolamento CACM come quelle "aree geografiche
 
 ---
 
+## CMM
+**Significato:** Capacity Management Module
+
+---
+
 ## CNEC
 **Significato:** Critical Network Elements and Contingenties
 
@@ -83,6 +92,11 @@ Lista di elementi "critici" della rete (e contingenze N-1). Elementi rilevanti d
 
 ## CVA
 **Significato:** Coordinated Validation Adjustment
+
+---
+
+## CZC
+**Significato:** Cross Zonal Capacity
 
 ---
 
@@ -139,6 +153,16 @@ Un prodotto che da diritti finanziari basati sulla differenza di prezzo (o sprea
 
 ## IBWT
 **Significato:** Italian Border Working Table
+
+---
+
+## IDA
+**Significato:** IntraDay Auctions
+
+Le IDA sono organizzate come aste *implicite* dove gli ordini raccolti vengono accoppiati, e la Cross Zonal Capacity (CZC) viene allocata simultaneamente per diversi Bidding Zone Borders (BZB).
+Le IDA tengono conto di tutti gli ordini validi sottomessi per le rispettive aste, e determinano i *clearing price* per le BZ rilevanti in base agli ordini accoppiati. 
+Sono la parte ad asta del Single IntraDay Coupling (SIDC), e completano il mercato SIDC che prima era basato solamente su metodi di trading continuo (come XBID). Sono state implementate in Europa il 13 giugno 2024, al fine di permettere di dare prezzi alla capacità transfrontaliera nel timeframe intragiornaliero.
+Il loro scopo è quello di *armonizzare* il calcolo e l'allocazione delle capacità transfrontaliere per rifletterne la carenza in un dato momento, e quindi mandare un segnale di prezzo adeguato al mercato.
 
 ---
 
@@ -257,6 +281,13 @@ Un progetto gestito dai NEMO e dai TSO dei paesi europei che vi prendono parte. 
 Un progetto gestito dai NEMO e dai TSO dei paesi europei che vi prendono parte. Si tratta di un mercato in *continuous trading*, in cui il **Continuous Trading Matching Algorithm** del MCO abbina in maniera continua le offerte, secondo il principio del *first come first served*, rispettando la CZC e gli Allocation Constraint.
 Il processo viene eseguito in maniera continua dalla Intraday Gate Opening (15:00 D-1) sino alla Intraday Gate Closure (un'ora prima del rilascio dell'energia).
 Gli operatori italiani hanno la possibilità di sottomettere al SIDC **offerte per portafoglio** e l'**obbligo di nominare entro H-1** le corrispondenti posizioni per unità. Per sua natura, un mercato che segue un principio di *first come first served* **non massimizza necessariamente il social welfare**.
+
+---
+
+## SOB
+**Significato:** Shared Order Book
+
+Si tratta del modulo che gestisce gli ordini (le offerte): ciascun ordine è identificato da quantità, prezzo e timestamp. L'order book è visibile agli operatori: gli ordini sono selezionabili in base alla capacità disponibile (non sono visibili gli ordini di altre aree di mercato che fisicamente non possono essere accoppiati) e secondo la **price-time priority**
 
 ---
 
