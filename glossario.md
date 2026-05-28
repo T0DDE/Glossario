@@ -62,7 +62,24 @@
 ## AFRR
 **Significato:** automatic Frequency Restoration Reserves
 
-Nell'ambito delle riserve per il bilanciamento, sono pargonabili alla **riserva secondaria**: si attivano automaticamente dal TSO entro **5** minuti dal verificarsi di uno sbilanciamento in frequenza. Le aFRR aiutano a ripristinare l'equilibrio del sistema dispacciando generazione o carico aggiuntivi, o riducendoli. Si costruisce sulla risposta inizializzata dalla Frequency Containment Reserve (FCR), e continua finché la frequenza non ritorna al valore nominale.
+Nell’ambito delle riserve per il bilanciamento del sistema elettrico, le aFRR (*automatic Frequency Restoration Reserve*) sono assimilabili alla **riserva secondaria** definita nel Codice di Rete Italiano (CRI).  
+Le aFRR vengono attivate automaticamente dal TSO (Transmission System Operator) entro pochi minuti dal verificarsi di uno sbilanciamento di frequenza, tipicamente entro **5 minuti**, attraverso sistemi di regolazione automatica della potenza erogata o assorbita dalle unità abilitate.  
+L’obiettivo delle aFRR è:  
+- riportare la frequenza del sistema verso il valore nominale;  
+- ripristinare gli scambi programmati tra aree di controllo;  
+- alleggerire progressivamente l’azione della FCR (*Frequency Containment Reserve*), che costituisce la prima risposta automatica alla perturbazione.  
+Le aFRR possono essere fornite sia in incremento (*upward regulation*) sia in decremento (*downward regulation*), tramite:  
+- aumento o riduzione della generazione;  
+- aumento o riduzione del consumo;  
+- attivazione di risorse di demand response o accumuli.  
+L’attivazione coordinata delle aFRR a livello europeo avviene tramite la piattaforma **PICASSO** (*Platform for the International Coordination of Automated Frequency Restoration and Stable System Operation*).  
+PICASSO consente ai TSO europei di:  
+- condividere le offerte di energia di bilanciamento aFRR;  
+- ottimizzare l’attivazione delle risorse disponibili tra diverse aree di controllo;  
+- utilizzare in maniera efficiente la capacità transfrontaliera disponibile;  
+- ridurre i costi complessivi di bilanciamento del sistema elettrico europeo.  
+La piattaforma esegue un processo di ottimizzazione centralizzato che seleziona automaticamente le offerte economicamente più efficienti, nel rispetto dei vincoli di rete e delle capacità di interconnessione disponibili.  
+Le aFRR rappresentano uno degli strumenti fondamentali per mantenere la stabilità dinamica del sistema elettrico europeo e assumono un ruolo sempre più importante con l’aumento della generazione da fonti rinnovabili non programmabili.
 
 ---
 
@@ -267,8 +284,29 @@ Si passa in questo modo dalla rete fisica a un prodotto di mercato, in modo coer
 ## MFRR
 **Significato:** manual Frequency Restoration Reserves
 
-Nell'ambito delle riserve per il bilanciamento, sono pargonabili alla **riserva terziaria rotante**: sono utilizzate quando si verificano sbilanciamenti più lunghi o importanti. A differenza della *automatic* FRR, la mFRR è attivata tipicamente manualmente o semi-manualmente dal TSO, ed è designata a supportare o sostituire l'aFRR se lo sbilancio in frequenza persiste. 
-La mFRR deve essere completamente attiva entro **12.5 minuti** dal segnale del TSO, e la consegna deve durare almeno **5** minuti.
+Nell’ambito delle riserve per il bilanciamento del sistema elettrico, le mFRR (*manual Frequency Restoration Reserve*) sono assimilabili alla **riserva terziaria rotante** definita nel Codice di Rete Italiano (CRI).  
+Le mFRR vengono utilizzate per gestire sbilanciamenti di frequenza più significativi o persistenti rispetto a quelli affrontati dalle aFRR.  
+A differenza delle aFRR (*automatic Frequency Restoration Reserve*), le mFRR sono attivate manualmente o semi-automaticamente dal TSO (Transmission System Operator), sulla base delle condizioni operative del sistema elettrico e delle necessità di bilanciamento.  
+Le mFRR hanno l’obiettivo di:  
+- supportare o sostituire progressivamente l’azione delle aFRR;  
+- ripristinare le riserve automatiche consumate durante le perturbazioni;  
+- riportare il sistema in condizioni operative sicure e stabili;  
+- garantire il mantenimento dell’equilibrio tra produzione e consumo nel medio termine.  
+Le risorse abilitate devono essere in grado di:  
+- raggiungere la piena attivazione entro **12,5 minuti** dal segnale del TSO;  
+- mantenere la consena della potenza attivata per almeno **5 minuti**.  
+Le mFRR possono essere fornite tramite:  
+- incremento o decremento della generazione;  
+- modulazione dei consumi;  
+- sistemi di accumulo o demand response.  
+L’attivazione coordinata delle mFRR a livello europeo avviene tramite la piattaforma **MARI** (*Manually Activated Reserves Initiative*).  
+MARI consente ai TSO europei di:  
+- condividere offerte di energia di bilanciamento mFRR;  
+- attivare risorse disponibili anche oltre i confini nazionali;  
+- ottimizzare economicamente il processo di bilanciamento;  
+- utilizzare in maniera efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.  
+La piattaforma esegue un processo centralizzato di selezione delle offerte basato su criteri economici e vincoli di rete, contribuendo alla riduzione dei costi complessivi di bilanciamento e all’aumento della sicurezza del sistema elettrico europeo.  
+Le mFRR rappresentano uno degli strumenti fondamentali della gestione operativa del sistema elettrico europeo, soprattutto in un contesto caratterizzato da una crescente presenza di fonti rinnovabili non programmabili e da una maggiore necessità di flessibilità del sistema.
 
 ---
 
@@ -352,12 +390,24 @@ Nello svolgimento delle loro attività, gli RCC contribuiscono al raggiungimento
 ## RR
 **Significato:** Replacement Reserves
 
-Nell'ambito delle riserve di bilanciamento, corrispondono grossomodo alla riserva terziaria di sostituzione definita nel Codice di Rete Italiano (CRI).
-Il processo RR relativo all'ora **H** si articola nelle seguenti operazioni:
-- **Fino ad H-55'**: gli operatori di mercato sottomettono le loro offerte aggiornate per il mercato di bilanciamento;
-- **Da H-55' ad H-40'**: i TSO calcolano il loro fabbisogno di energia di bilanciamento da RR, effettuano le analisi di sicurezza, e calcolano gli ATC disponibili.
-- **Da H-40' ad H-32'**: la Piattaforma RR processerà le offerte ed i fabbisogni sottomessi dai TSO. La soluzione elaborata terrà conto delle restrizioni imposte dagli ATC tra le diverse zone;
-- **Entro H-30'**: la piattaforma RR comunicherà i risultati (offerte accettate, fabbisogni soddisfatti ed ATC residui) ai TSO che a loro volta li comunicheranno agli operatori di mercato.
+Nell’ambito delle riserve di bilanciamento europee, le RR (*Replacement Reserves*) corrispondono approssimativamente alla riserva terziaria di sostituzione definita nel Codice di Rete Italiano (CRI).  
+Le RR sono utilizzate dai TSO (Transmission System Operators) per il ripristino delle riserve di bilanciamento e per la gestione degli sbilanciamenti del sistema elettrico su orizzonti temporali più lunghi rispetto ad aFRR e mFRR.  
+L’attivazione delle RR avviene tramite la piattaforma europea **TERRE** (*Trans European Replacement Reserves Exchange*), che consente lo scambio coordinato di energia di bilanciamento tra i diversi sistemi elettrici europei, nel rispetto dei vincoli di rete e della capacità transfrontaliera disponibile.  
+Il processo RR relativo all’ora **H** si articola tipicamente nelle seguenti fasi:  
+- **Fino ad H-55’**  
+  Gli operatori di mercato sottomettono le offerte aggiornate per il mercato di bilanciamento.  
+- **Da H-55’ ad H-40’**  
+  I TSO determinano il proprio fabbisogno di energia di bilanciamento da RR, effettuano le analisi di sicurezza della rete e calcolano gli ATC (*Available Transfer Capacity*) disponibili.  
+- **Da H-40’ ad H-32’**  
+  La piattaforma TERRE processa le offerte e i fabbisogni inviati dai TSO.  
+  L’ottimizzazione tiene conto delle limitazioni derivanti dagli ATC disponibili tra le diverse zone di mercato.  
+- **Entro H-30’**  
+La piattaforma comunica ai TSO gli esiti del processo:  
+  - offerte accettate;  
+  - fabbisogni soddisfatti;  
+  - capacità residue disponibili.  
+I TSO provvedono successivamente a notificare i risultati agli operatori di mercato.  
+Le RR rappresentano uno degli strumenti europei fondamentali per il bilanciamento coordinato del sistema elettrico e contribuiscono all’efficienza operativa e alla sicurezza del sistema europeo interconnesso.
 
 ---
 
