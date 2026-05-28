@@ -360,18 +360,18 @@ Gli RSC si sono evoluti in Regional Coordination Centers (RCC) in Europa, miglio
 ## SDAC
 **Significato:** Single Day Ahead Coupling
 
-Lo SDAC (Single Day-Ahead Coupling) è il meccanismo europeo di integrazione del mercato elettrico del giorno prima (*day-ahead market*), gestito congiuntamente dai NEMO (Nominated Electricity Market Operators) e dai TSO (Transmission System Operators) dei paesi partecipanti.  
-L’obiettivo dello SDAC è determinare, in maniera coordinata a livello europeo, i prezzi dell’energia elettrica e gli scambi transfrontalieri per il giorno successivo, massimizzando il *social welfare* e garantendo un utilizzo efficiente della capacità di interconnessione tra le diverse zone di mercato.  
-Lo SDAC opera tramite un mercato ad asta implicita con meccanismo di prezzo marginale (*marginal pricing*):  
-- gli operatori presentano offerte di acquisto e vendita per ciascuna Market Time Unit (MTU) del giorno successivo;  
-- il sistema effettua simultaneamente l’accoppiamento dell’energia e della capacità transfrontaliera disponibile;  
-- il risultato dell’asta determina prezzi zonali, programmi di scambio e flussi sulle interconnessioni europee.  
-L’algoritmo utilizzato per il market coupling europeo è **EUPHEMIA** (*Pan-European Hybrid Electricity Market Integration Algorithm*), sviluppato per ottimizzare l’allocazione delle risorse e della capacità di trasmissione sull’intero mercato europeo.  
-Lo SDAC si svolge generalmente nelle ore mattutine del giorno D-1:  
-- la raccolta delle offerte avviene tipicamente fino alle ore 12:00;  
-- il calcolo del market coupling e la pubblicazione degli esiti avvengono indicativamente tra le 12:40 e le 13:00, salvo estensioni o procedure di fallback in caso di problematiche operative.  
-Nel mercato italiano, lo SDAC corrisponde al **Mercato del Giorno Prima (MGP)** gestito da :contentReference[oaicite:0]{index=0}.  
-Il mercato lavora sulle 96 MTU giornaliere (quartorarie) previste per il giorno di consegna e rappresenta il principale mercato energetico europeo in termini di volumi negoziati, coprendo normalmente circa il 70–80% dei fabbisogni energetici della giornata di riferimento.  
+Lo SDAC (Single Day-Ahead Coupling) è il meccanismo europeo di integrazione del mercato elettrico del giorno prima (*day-ahead market*), gestito congiuntamente dai NEMO (Nominated Electricity Market Operators) e dai TSO (Transmission System Operators) dei paesi partecipanti.
+L’obiettivo dello SDAC è determinare, in maniera coordinata a livello europeo, i prezzi dell’energia elettrica e gli scambi transfrontalieri per il giorno successivo, massimizzando il *social welfare* e garantendo un utilizzo efficiente della capacità di interconnessione tra le diverse zone di mercato.
+Lo SDAC opera tramite un mercato ad asta implicita con meccanismo di prezzo marginale (*marginal pricing*):
+- gli operatori presentano offerte di acquisto e vendita per ciascuna Market Time Unit (MTU) del giorno successivo;
+- il sistema effettua simultaneamente l’accoppiamento dell’energia e della capacità transfrontaliera disponibile;
+- il risultato dell’asta determina prezzi zonali, programmi di scambio e flussi sulle interconnessioni europee.
+L’algoritmo utilizzato per il market coupling europeo è **EUPHEMIA** (*Pan-European Hybrid Electricity Market Integration Algorithm*), sviluppato per ottimizzare l’allocazione delle risorse e della capacità di trasmissione sull’intero mercato europeo.
+Lo SDAC si svolge generalmente nelle ore mattutine del giorno D-1:
+- la raccolta delle offerte avviene tipicamente fino alle ore 12:00;
+- il calcolo del market coupling e la pubblicazione degli esiti avvengono indicativamente tra le 12:40 e le 13:00, salvo estensioni o procedure di fallback in caso di problematiche operative.
+Nel mercato italiano, lo SDAC corrisponde al **Mercato del Giorno Prima (MGP)**.
+Il mercato lavora sulle 96 MTU giornaliere (quartorarie) previste per il giorno di consegna e rappresenta il principale mercato energetico europeo in termini di volumi negoziati, coprendo normalmente circa il 70–80% dei fabbisogni energetici della giornata di riferimento.
 Lo SDAC costituisce il principale strumento di formazione del prezzo dell’energia elettrica in Europa e svolge un ruolo centrale nell’integrazione dei mercati elettrici europei, nella sicurezza del sistema e nell’integrazione delle fonti rinnovabili.
 
 ---
