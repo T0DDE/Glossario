@@ -2,6 +2,7 @@
 
 ## Indice
 
+- [AFRR](#afrr)
 - [AMR](#amr)
 - [BZB](#bzb)
 - [CACM](#cacm)
@@ -17,6 +18,7 @@
 - [DQC](#dqc)
 - [FB](#fb)
 - [FCA](#fca)
+- [FCR](#fcr)
 - [FRM](#frm)
 - [FTR](#ftr)
 - [GLSK](#glsk)
@@ -27,6 +29,7 @@
 - [IVA](#iva)
 - [LT SM](#lt-sm)
 - [LTA](#lta)
+- [MFRR](#mfrr)
 - [NEMO](#nemo)
 - [NPF](#npf)
 - [NTC](#ntc)
@@ -36,12 +39,21 @@
 - [PUN](#pun)
 - [RAM](#ram)
 - [RCC](#rcc)
+- [RR](#rr)
 - [RSC](#rsc)
 - [SDAC](#sdac)
 - [SIDC](#sidc)
 - [SOB](#sob)
+- [SOGL](#sogl)
 - [TSO](#tso)
 - [TTF](#ttf)
+
+---
+
+## AFRR
+**Significato:** automatic Frequency Restoration Reserves
+
+Nell'ambito delle riserve per il bilanciamento, sono pargonabili alla **riserva secondaria**: si attivano automaticamente dal TSO entro **5** minuti dal verificarsi di uno sbilanciamento in frequenza. Le aFRR aiutano a ripristinare l'equilibrio del sistema dispacciando generazione o carico aggiuntivi, o riducendoli. Si costruisce sulla risposta inizializzata dalla Frequency Containment Reserve (FCR), e continua finché la frequenza non ritorna al valore nominale.
 
 ---
 
@@ -139,6 +151,16 @@ L’obiettivo è garantire capacità affidabile e fornire agli operatori strumen
 
 ---
 
+## FCR
+**Significato:** Frequency Containment Reserve
+
+Nell'ambito delle riserve per il bilanciamento, sono pargonabili alla **riserva primaria**: sono la prima linea di difesa quando la frequenza di rete devia dai 50Hz. Quando cala o sale sopra la banda accettabile, chi fornisce FCR risponde automaticamente aumentando o diminuendo l'output di potenza entro **30** secondi, sostenendo tale risposta per almeno **15** minuti.
+  L'FCR è un servizio completamente automatizzato e decentralizzato, per cui ogni asset misura indipendentemente la frequenza di rete e reagisce senza alcuna istruzione dal TSO.
+  Il mercato FCR opera attraverso un'asta giornaliera, divisa in 6 periodi di 4h per il giorno seguente. Le offerte devono essere simmetriche, che significa che i partecipanti offrono stessa capacità a scendere e a salire. Tutte le offerte acettate vengono chiuse a un *clearing price* uniforme (corrispondente all'offerta accettata a prezzo più alto), per assicurare una compensazione giusta.
+nota: FCR paga solo per la *disponibilità di capacità*, non per l'effettivo utilizzo di energia. L'offerta minima è di **1 MW**, con offerte categorizzate in **divisibili** e **non divisibili** (queste ultime con un massimo di **25 MW**).
+
+---
+
 ## FRM
 **Significato:** Flow Reliability Margin
 
@@ -206,6 +228,14 @@ Si passa in questo modo dalla rete fisica a un prodotto di mercato, in modo coer
 
 ## LTA
 **Significato:** Long-term Allocated Capacities
+
+---
+
+## MFRR
+**Significato:** manual Frequency Restoration Reserves
+
+Nell'ambito delle riserve per il bilanciamento, sono pargonabili alla **riserva terziaria rotante**: sono utilizzate quando si verificano sbilanciamenti più lunghi o importanti. A differenza della *automatic* FRR, la mFRR è attivata tipicamente manualmente o semi-manualmente dal TSO, ed è designata a supportare o sostituire l'aFRR se lo sbilancio in frequenza persiste. 
+La mFRR deve essere completamente attiva entro **12.5 minuti** dal segnale del TSO, e la consegna deve durare almeno **5** minuti.
 
 ---
 
@@ -279,6 +309,13 @@ Nello svolgimento delle loro attività, gli RCC contribuiscono al raggiungimento
 
 ---
 
+## RR
+**Significato:** Replacement Reserves
+
+Nell'ambito delle riserve di bilanciamento, corrispondono grossomodo alla riserva terziaria di sostituzione definita nel Codice di Rete Italiano (CRI).
+
+---
+
 ## RSC
 **Significato:** Regional Security Coordinator
 
@@ -306,6 +343,13 @@ Gli operatori italiani hanno la possibilità di sottomettere al SIDC **offerte p
 **Significato:** Shared Order Book
 
 Si tratta del modulo che gestisce gli ordini (le offerte): ciascun ordine è identificato da quantità, prezzo e timestamp. L'order book è visibile agli operatori: gli ordini sono selezionabili in base alla capacità disponibile (non sono visibili gli ordini di altre aree di mercato che fisicamente non possono essere accoppiati) e secondo la **price-time priority**
+
+---
+
+## SOGL
+**Significato:** System Operation GuideLines
+
+Secondo i principi delle SOGL i TSDO hanno l'obbligo di dimensionare i propri fabbisogni di riserva.
 
 ---
 
