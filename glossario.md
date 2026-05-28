@@ -4,6 +4,7 @@
 
 - [AFRR](#afrr)
 - [AMR](#amr)
+- [APG](#apg)
 - [BESS](#bess)
 - [BRP](#brp)
 - [BZB](#bzb)
@@ -35,6 +36,7 @@
 - [LT SM](#lt-sm)
 - [LTA](#lta)
 - [MARI](#mari)
+- [MEAS](#meas)
 - [MFRR](#mfrr)
 - [MTU](#mtu)
 - [NEMO](#nemo)
@@ -86,6 +88,13 @@ Le aFRR rappresentano uno degli strumenti fondamentali per mantenere la stabilit
 
 ## AMR
 **Significato:** Adjustment for Minimum RAM
+
+---
+
+## APG
+**Significato:** Austrian Power Grid
+
+TSO austriaco.
 
 ---
 
@@ -307,6 +316,14 @@ Il progetto rappresenta uno dei principali strumenti europei per l’integrazion
 - alla riduzione dei costi complessivi di bilanciamento;  
 - all’incremento della flessibilità del sistema;  
 - all’integrazione delle fonti rinnovabili non programmabili nel mercato elettrico europeo.
+
+---
+
+## MEAS
+**Significato:** Mutual Emergency Assistance Service
+
+Una delle procedure attuabili dalla sala di controllo qualora le azioni di riduzioni di capacità e di ATC non siano sufficienti a limitare gli scambi sulle interconnessioni entro i valori di NTC.
+  In particolare, MEAS consiste in un Contratto bilaterale tra due TSO con il quale questi **si rendono disponibili a fornire energia l'uno all'altro** sotto richiesta. L'energia fornita va pagata ad un prezzo comunicato in D-1. Terna ha stipulato il contratto MEAS con tutti i TSO confinanti a eccezione di Austrian Power Grid (APG - TSO austriaco).
 
 ---
 
