@@ -2,7 +2,6 @@
 
 ## Indice
 
-- [- **IDA – INTRADAY AUCTIONS**](#--ida--intraday-auctions)
 - [AFRR](#afrr)
 - [AMR](#amr)
 - [BRP](#brp)
@@ -33,7 +32,6 @@
 - [IVA](#iva)
 - [LT SM](#lt-sm)
 - [LTA](#lta)
-- [MERCATO INTRADAY CONTINUO EUROPEO BASATO SUL PRINCIPIO DEL *FIRST COME, FIRST SERVED*.](#mercato-intraday-continuo-europeo-basato-sul-principio-del-first-come-first-served)
 - [MFRR](#mfrr)
 - [NEMO](#nemo)
 - [NPF](#npf)
@@ -53,14 +51,6 @@
 - [TERRE](#terre)
 - [TSO](#tso)
 - [TTF](#ttf)
-
----
-
-## - **IDA – INTRADAY AUCTIONS**
-**Significato:** Aste intraday europee implicite introdotte per integrare il continuous trading e migliorare l’efficienza allocativa del mercato.
-
-Le IDA consentono un accoppiamento simultaneo di energia e capacità transfrontaliera attraverso aste pan-europee svolte in specifiche finestre temporali durante la giornata operativa.  
-  A differenza del continuous trading, il meccanismo d’asta mira alla massimizzazione del *social welfare*.
 
 ---
 
@@ -259,11 +249,6 @@ Si passa in questo modo dalla rete fisica a un prodotto di mercato, in modo coer
 
 ## LTA
 **Significato:** Long-term Allocated Capacities
-
----
-
-## MERCATO INTRADAY CONTINUO EUROPEO BASATO SUL PRINCIPIO DEL *FIRST COME, FIRST SERVED*.
-**Significato:** Gli ordini vengono abbinati in tempo reale dal **Continuous Trading Matching Algorithm** del MCO (Market Coupling Operator), nel rispetto della capacità transfrontaliera disponibile (CZC – Cross Zonal Capacity) e degli eventuali vincoli di allocazione (*Allocation Constraints*).
 
 ---
 
