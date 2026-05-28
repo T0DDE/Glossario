@@ -363,7 +363,7 @@ PICASSO consente ai TSO europei di:
 - condividere offerte di energia di bilanciamento aFRR;
 - attivare risorse disponibili anche oltre i confini nazionali;
 - ottimizzare economicamente il bilanciamento del sistema elettrico europeo;
-- utilizzare in modo efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.<br>
+- utilizzare in modo efficiente la capacità di interconnessione disponibile tra le diverse aree di controllo.<br><br>
 La piattaforma esegue un processo centralizzato di ottimizzazione che seleziona automaticamente le offerte economicamente più efficienti, nel rispetto dei vincoli di rete, della capacità transfrontaliera disponibile e delle esigenze di sicurezza del sistema.
 PICASSO rappresenta uno dei principali progetti europei per l’integrazione dei mercati di bilanciamento e contribuisce:
 - al miglioramento della stabilità della frequenza del sistema elettrico europeo;
