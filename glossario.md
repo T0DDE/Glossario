@@ -19,6 +19,7 @@
 - [CZC](#czc)
 - [DACC](#dacc)
 - [DQC](#dqc)
+- [EUPHEMIA](#euphemia)
 - [FAT](#fat)
 - [FB](#fb)
 - [FCA](#fca)
@@ -184,6 +185,19 @@ Il processo di calcolo della capacità che si avvia nel D-2 e determina l'NTC pe
 
 ## DQC
 **Significato:** Data Quality Check
+
+---
+
+## EUPHEMIA
+**Significato:** Pan-EUropean Hybrid Electricity Market Integration Algorithm
+
+EUPHEMIA è un algoritmo unico di accoppiamento dei prezzi utilizzato, a partire dal 2014, per calcolare l'allocazione dell'energia e i prezzi dell'elettricità in tutta Europa. È stato sviluppato specificamente per risolvere il problema associato all'accoppiamento dei mercati elettrici del giorno prima (day-ahead) all'interno del progetto PCR (Price Coupling of Regions).
+Il suo funzionamento si basa sui seguenti punti chiave:
+- Integrazione di domanda e offerta: I partecipanti inviano i loro ordini alle rispettive Borse Elettriche (PX) e tutti questi ordini vengono raccolti e sottoposti a EUPHEMIA. L'algoritmo decide quali ordini accettare e quali rifiutare, abbinando domanda e offerta per tutti i periodi di una singola giornata contemporaneamente.
+-Massimizzazione del benessere sociale: L'obiettivo primario di EUPHEMIA è quello di massimizzare il benessere sociale complessivo, che è dato dalla somma del surplus dei consumatori, del surplus dei produttori e della rendita di congestione attraverso le varie regioni.
+- Rispetto dei limiti fisici: L'algoritmo garantisce che i flussi di potenza indotti dagli ordini eseguiti non superino i limiti e la capacità fisica della rete di trasmissione e degli interconnettori.
+- Output forniti: EUPHEMIA calcola e restituisce i prezzi di compensazione del mercato (market clearing prices) per ciascuna zona, i volumi di energia abbinati, la posizione netta di ogni area di offerta (bidding zone) e i flussi in transito sulle linee.
+Si tratta di un algoritmo generico e altamente flessibile: è in grado di gestire contemporaneamente sia gli ordini standard sia quelli più sofisticati (come gli ordini a blocco o quelli legati a condizioni di reddito minimo), ricercando rapidamente una prima soluzione valida per poi continuare a iterare nel tentativo di migliorare ulteriormente il benessere generale
 
 ---
 
