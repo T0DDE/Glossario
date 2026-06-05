@@ -426,6 +426,14 @@ PICASSO ottimizza l’attivazione delle offerte ed il soddisfacimento dei fabbis
 ## PTDF
 **Significato:** Power Transfer Distribution Factor
 
+Consiste in un parametro utilizzato per calcolare e gestire i vincoli di trasmissione all'interno delle reti elettriche magliate.
+Nello specifico, il PTDF è un rapporto (ratio) che indica quanti MWh vengono impiegati dalle posizioni nette che derivano dagli scambi di energia.
+Insieme al RAM (Remaining Available Margin, ovvero il margine ancora disponibile per gli scambi), il PTDF è una delle due componenti fondamentali per definire i vincoli di calcolo della capacità secondo l'approccio Flow-Based (FB).
+Il suo utilizzo permette di:
+- Modellare i limiti della rete: i PTDF servono a rappresentare matematicamente i diversi vincoli fisici che limitano gli scambi di energia consentiti tra le zone.
+- Impostare il calcolo matriciale: all'interno degli algoritmi di calcolo (come Euphemia), i vincoli modellati tramite PTDF compongono una matrice. In questa matrice, ogni singola riga corrisponde a un vincolo di rete (a cui è associato un margine) e ogni colonna rappresenta un hub o mercato a cui quel vincolo si applica (ad esempio, i mercati del centro-ovest Europa come Belgio, Germania, Francia e Paesi Bassi).<br><br>
+In questo contesto, la "posizione netta" su cui agiscono i PTDF deve essere intesa esclusivamente come il risultato degli scambi che avvengono attraverso la rete magliata (Flow-Based), escludendo dal calcolo gli scambi effettuati tramite le linee gestite con il metodo tradizionale ATC (Available Transfer Capacity).
+
 ---
 
 ## PTE
@@ -459,6 +467,13 @@ Quindi:
 
 ## RAM
 **Significato:** Remaining Available Margin
+
+Si tratta del parametro che indica il numero di MW (Megawatt) effettivamente disponibili per gli scambi di energia.
+Così come il PTDF, il RAM è una delle due componenti fondamentali utilizzate per definire e calcolare i vincoli di trasmissione secondo l'approccio Flow-Based (FB).
+All'interno della modellizzazione matematica dei limiti della rete (utilizzata da algoritmi come Euphemia):
+- Definisce il limite fisico: A ogni singolo vincolo di rete (rappresentato da una specifica riga nella matrice matematica dei vincoli) è associato un corrispondente margine di capacità disponibile.
+- Vettore di calcolo: L'insieme di questi margini di capacità compone un vettore matematico dedicato (indicato nel modello come vettore pdl​).<br><br>
+In sintesi, mentre il PTDF calcola in che proporzione gli scambi vanno a incidere sulla rete, il RAM stabilisce quantitativamente i MW che possono ancora transitare in sicurezza.
 
 ---
 
