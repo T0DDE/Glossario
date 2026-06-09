@@ -28,6 +28,7 @@
 - [FTR](#ftr)
 - [GCT](#gct)
 - [GLSK](#glsk)
+- [GME](#gme)
 - [GSK](#gsk)
 - [IBWT](#ibwt)
 - [IDA](#ida)
@@ -254,6 +255,16 @@ Un prodotto che da diritti finanziari basati sulla differenza di prezzo (o sprea
 **Significato:** Generation and Load Shift Keys
 
 "Traduce" i cambiamenti in Net Position (NP) in cambiamenti nella generazione/consumo nodali.
+
+---
+
+## GME
+**Significato:** Gestore dei Mercati Energetici
+
+Nel contesto del sistema elettrico italiano, il GME svolge l'importante ruolo di NEMO (Nominated Electricity Market Operator) e si occupa principalmente di:
+- Gestire la Borsa Elettrica: organizza le piattaforme di mercato (come il Mercato del Giorno Prima o MGP e il Mercato Infragiornaliero o MI), dove raccoglie, verifica e gestisce le offerte di acquisto e vendita di energia presentate dagli operatori.
+- Calcolare i prezzi di riferimento: calcola i prezzi di mercato dell'energia, mantenendo la continuità nel calcolo del PUN (Prezzo Unico Nazionale) a tutela dei consumatori e per garantire la trasparenza del mercato all'ingrosso.
+- Gestire le piattaforme per gli accumuli: organizza e gestisce le procedure competitive e la piattaforma informatica attraverso cui gli operatori possono negoziare i prodotti di time-shifting, per utilizzare la capacità dei sistemi di accumulo contrattualizzata tramite le aste di Terna.
 
 ---
 
