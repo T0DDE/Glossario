@@ -492,12 +492,13 @@ In sintesi, mentre il PTDF calcola in che proporzione gli scambi vanno a incider
 **Significato:** Regional Coordination Center
 
 Gli RCC sono definiti dalla Electricity Regulation, e sostituiscono i Regional Security Coordinators (RSC) previsti dalla System Operation Guideline.
-Gli RCC ricoprono il ruolo dei RSC, oltre a dei compiti di system operation, relativi ai mercati, e alla preparazione ai rischi.
-I loro compiti includono:
-- supportare la valutazione della coerenza dei piani di difesa e di ripristino dei TSO;
-- svolgere il coordinamento regionale della pianificazione delle interruzioni;
-- effettuare analisi successive alle operazioni e ai disturbi della rete;
-- formare e certificare il personale che lavora per gli RCC.
+  Gli RCC ricoprono il ruolo dei RSC, oltre a dei compiti di system operation, relativi ai mercati, e alla preparazione ai rischi.
+  I loro compiti includono:
+  - supportare la valutazione della coerenza dei piani di difesa e di ripristino dei TSO;
+  - svolgere il coordinamento regionale della pianificazione delle interruzioni;
+  - effettuare analisi successive alle operazioni e ai disturbi della rete;
+  - formare e certificare il personale che lavora per gli RCC.
+  - ricalcolare i valori di NTC partendo dall'input dei valori calcolati dai TSO.
 Nello svolgimento delle loro attività, gli RCC contribuiscono al raggiungimento degli obiettivi per il 2030 e il 2050 stabiliti dai quadri delle politiche climatiche ed energetiche, in particolare per quanto riguarda il rafforzamento della sicurezza dell’approvvigionamento e dell’efficienza, nonché l’aumento dell’elettrificazione del settore energetico.
 
 ---
