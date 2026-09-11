@@ -9,6 +9,7 @@
 - [BRP](#brp)
 - [BZB](#bzb)
 - [CACM](#cacm)
+- [CBEX](#cbex)
 - [CCM](#ccm)
 - [CCR](#ccr)
 - [CID](#cid)
@@ -120,6 +121,11 @@ TSO austriaco.
 
 ## CACM
 **Significato:** Capacity Allocation and Congestion Managment
+
+---
+
+## CBEX
+**Significato:** Cross Border EXchange
 
 ---
 
